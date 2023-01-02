@@ -6,11 +6,11 @@ class Projects extends Component {
     render(){
         
         const projects = [
-        {title: 'Apple Clone (React.js)'},
-        {title: 'tappedesigns portfolio'},
-        {title: 'MoneyBox'},
-        {title: 'Kocoon version 2.0'},
-        {title: 'Kocoon'},
+        {title: 'Apple Clone (React.js)', desc:'I created the fully responsive apple website (November 2022) from scratch . This website uses React.js, SASS & Responsive Design'},
+        {title: 'tappedesigns portfolio', desc:'I created a fully responsive portfolio website for one of my friends. This website uses HTML, SASS, CSS, JavaScript & Responsive Design'},
+        {title: 'MoneyBox', desc:'I created a fully responsive banking website. This website uses HTML, SASS, CSS, JavaScript(Jquery) & Responsive Design.'},
+        {title: 'Kocoon version 2.0', desc:'We provide the latest information on wellbeing topics by working with charities, services and academics.'},
+        {title: 'Kocoon', desc:'We are an educational platform that focuses on the wellbeing by presenting academic papers for everyone.'},
         {title: 'Blog website'},
         {title: 'Food Delivery Website'},
         {title: 'The Modern House Landing-Page'},

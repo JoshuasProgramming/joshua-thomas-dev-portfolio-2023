@@ -5,10 +5,13 @@ const Project_Item = (props) => {
     return(
 
         <div class="project-banner">
-            <p>{props.title}</p>
+            <div className="project-banner-text">
+                <h1>
+                    <span>{props.title}</span>
+                </h1>
+                <p></p>
+            </div>
         </div>
-
-        
     )
 }
 
