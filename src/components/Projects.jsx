@@ -30,7 +30,7 @@ class Projects extends Component {
 
         return (
             projects.map((value, key) => (
-                <Project_Item key={key} title={value.title}/>
+                <Project_Item key={key} title={value.title} desc={value.desc}/>
             ))
         )
     }
