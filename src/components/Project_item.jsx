@@ -3,7 +3,12 @@ import '../styles/style.css';
 
 const Project_Item = (props) => {
     return(
-        <p>{props.title}</p>
+
+        <div class="project-banner">
+            <p>{props.title}</p>
+        </div>
+
+        
     )
 }
 
