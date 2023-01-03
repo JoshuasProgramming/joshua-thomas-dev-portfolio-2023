@@ -16,7 +16,7 @@ import FoodDX from '../images/FoodDX.JPG';
 import ModernHouse from '../images/The_Modern_House.JPG';
 import Interior from '../images/Interior.png';
 import HoneyPot from '../images/HoneyPot.png';
-import FetchAPIs from '../images/fetchAPIs.png';
+import FetchAPIs from '../images/fetchAPIs.JPG';
 import BurgerPalace from '../images/burger palace.JPG';
 import OrangeDiner from '../images/Orange Diner.JPG';
 import The5Star from '../images/The 5 Star.JPG';
@@ -24,7 +24,7 @@ import BlueSciFi from '../images/Blue Sci-fi.JPG';
 import CompoundInterest from '../images/compound interest calculator.JPG';
 import WeightConverter from '../images/Weight Converter.JPG';
 import NumberGuessingGame from '../images/number guessing game.JPG';
-import portfolio2022 from 'images/portfolio.JPG'
+import portfolio2022 from '../images/portfolio.JPG';
 
 
 class Projects extends Component {
@@ -40,7 +40,7 @@ class Projects extends Component {
         {title: 'Food Delivery Website', desc: 'I created a fully responsive real estate website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design', image: {src: FoodDX, alt: 'FoodDX_IMG'}},
         {title: 'The Modern House Landing-Page', desc: 'I created a fully responsive real estate website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design.', image: {src: ModernHouse, alt: 'ModernHouseImg'}},
         {title: 'Interior-Design-Landing-Page', desc:'I created a fully responsive furniture website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design.', image: {src: Interior, alt: 'InteriorImg'}},
-        {title: 'HoneyPot Furniture', desc:'This was a coding test, which had me create a fully responsive ecommerce website from a UX/UI design. This website which uses HTML, SASS, JavaScript & Responsive Design.', image: {src: ModernHouse, alt: 'ModernHouseImg'}},
+        {title: 'HoneyPot Furniture', desc:'This was a coding test, which had me create a fully responsive ecommerce website from a UX/UI design. This website which uses HTML, SASS, JavaScript & Responsive Design.', image: {src: HoneyPot, alt: 'HoneyPotImg'}},
         {title: 'FetchAPIs.com',desc:'Full stack website which was has a API tracker for Covid data, weather data and movie data. Website uses HTML, SASS, JavaScript, PHP, MYSQL & Responsive Design.1. API integrations (Covid data, weather data, movie data)', image: {src: FetchAPIs, alt: 'FetchAPIsImg'}},
         {title: 'Burger Palace', desc:'Full stack website which was designed for a fast food chain company called "Burger Palace". Website uses HTML, SASS, JavaScript, PHP & Responsive Design', image: {src: BurgerPalace, alt: 'BurgerPalaceImg'}},
         {title: 'Orange Diner', desc:'Full stack website which was designed for a bar called "Orange Diner". Website uses HTML, SASS, JavaScript, PHP, MYSQL & Responsive Design.', image: {src: OrangeDiner, alt: 'OrangeDinerImg'}},
