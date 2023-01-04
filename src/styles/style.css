@@ -1,12 +1,1 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.project-banner img {
-  width: 600px;
-  margin: inherit;
-  display: block;
-  border-radius: 5px;
-  padding: 1% 0;
-}/*# sourceMappingURL=style.css.map */
+*{margin:0;padding:0}.project-banner img{width:600px;margin:inherit;display:block;border-radius:5px;padding:1% 0}nav .navigation{display:flex;align-items:center;justify-content:center;flex-direction:row}
