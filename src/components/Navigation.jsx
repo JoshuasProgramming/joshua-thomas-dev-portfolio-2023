@@ -14,18 +14,20 @@ class Navigation extends Component {
         ];
 
         return (
-
             <nav>
                 <ul className="navigation">
 
-                    {navigationLinks.map((value, key) => (
-                        <li key={key}> {value.name} </li>
-                    ))}
-                    
+                    <div className="left">
+                        <h1><span>Joshua</span>Thomas.</h1>
+                    </div>
+
+                    <div className="right">
+                        {navigationLinks.map((value, key) => (
+                            <li key={key}> {value.name} </li>
+                        ))}
+                    </div>
                 </ul>
             </nav>
-
-            
         )
     }
 }
