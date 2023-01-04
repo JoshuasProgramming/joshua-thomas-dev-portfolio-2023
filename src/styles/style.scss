@@ -4,11 +4,11 @@
 //creating variables for fonts, sizes and positioning
 $primary-font: system-ui;
 $primary-background: #01203e;
-$primary-color: #f5f3f3ef;
+$primary-color: #ffffff;
 $primary-weight: 300;
 
-$span-font: system-ui;
-$span-color: #d2d2d2ef;
+$span-font: inherit;
+$span-color: #fffbfbef;
 
 
 ////////////////////////////////////default settings/////////////////////////////////
@@ -36,6 +36,7 @@ nav{
         justify-content: space-around;
         flex-direction: row;
         background: $primary-background;
+        min-height: 62px;
 
         .left{
             font-family: $primary-font;
@@ -49,6 +50,20 @@ nav{
                 color: $span-color;
                 font-weight: 700;
 
+            }
+        }
+
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+
+            li{
+                list-style-type: none;
+                font-family: $primary-font;
+                color: $primary-color;
+                padding-right: 10px;
             }
         }
     }
