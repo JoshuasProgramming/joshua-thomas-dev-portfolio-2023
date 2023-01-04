@@ -142,4 +142,10 @@ nav{
             font-size: 38px;
         }
     }
+
+    .text{
+        background: -webkit-linear-gradient(45deg, $primary-color, rgb(197, 196, 196));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
