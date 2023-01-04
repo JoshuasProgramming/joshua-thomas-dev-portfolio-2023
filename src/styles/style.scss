@@ -1,5 +1,15 @@
-//import Roboto Black 900 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Roboto:wght@900&display=swap');
+//import Roboto 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+//creating variables for fonts, sizes and positioning
+$primary-font: system-ui;
+$primary-background: #01203e;
+$primary-color: #f5f3f3ef;
+$primary-weight: 300;
+
+$span-font: system-ui;
+$span-color: #d2d2d2ef;
+
 
 ////////////////////////////////////default settings/////////////////////////////////
 *{
@@ -23,11 +33,23 @@ nav{
     .navigation{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: row;
+        background: $primary-background;
 
         .left{
+            font-family: $primary-font;
+            color: $primary-color;
+            
+            h1{
+                font-weight: $primary-weight;
+            }
+            
+            span{
+                color: $span-color;
+                font-weight: 700;
 
+            }
         }
     }
 }
