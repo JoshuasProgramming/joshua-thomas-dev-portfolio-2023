@@ -44,6 +44,7 @@ nav{
             
             h1{
                 font-weight: $primary-weight;
+                cursor: pointer;
             }
             
             span{
@@ -58,12 +59,20 @@ nav{
             align-items: center;
             justify-content: space-between;
             flex-direction: row;
+            width: 190px;
 
             li{
                 list-style-type: none;
                 font-family: $primary-font;
                 color: $primary-color;
-                padding-right: 10px;
+                font-size: 17px;
+                cursor: pointer;
+                transition: .9s ease-in-out;
+            }
+
+            li:hover{
+                color: #6565ca;
+                transition: 1ms ease-in-out;
             }
         }
     }
