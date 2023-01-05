@@ -21,8 +21,14 @@ const Featured_projects = (props) => {
                     <h4>{props.date}</h4>
                     <Featured_projects_language/>
                     <p>{props.desc}</p>
+                    <div className="info">
+                        <a>live site</a>
+                        <a>source code</a>
+                        <a>read more</a>
+                    </div>
                 </div>
             </div>
+            
         )
     }
 }
