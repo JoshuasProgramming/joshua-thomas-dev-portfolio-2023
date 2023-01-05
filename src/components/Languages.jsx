@@ -16,7 +16,7 @@ class Languages extends Component {
     render(){
 
         const icons = [
-            {images: {src: ReactIcon, alt: 'react-image'}},
+            {images: {src: ReactIcon, alt: 'react-image'}, name: 'react'},
             {images: {src: JS, alt: 'js-image'}},
             {images: {src: json, alt: 'json-image'}},
             {images: {src: Sass, alt: 'sass-image'}},
@@ -33,7 +33,7 @@ class Languages extends Component {
                 <div className="icons">
                 {
                      icons.map((value, key) => (
-                        <img key={key} src={value.images.src} alt={value.images.alt}/>
+                        <img title={value.name} key={key} src={value.images.src} alt={value.images.alt}/>
                     ))
                 }
                 </div>
