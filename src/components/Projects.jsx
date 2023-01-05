@@ -1,6 +1,7 @@
 //react imports 
 import React, { Component } from 'react';
 import Project_Item from './Project_item';
+import Featured_projects from './Featured_projects';
 
 //style imports
 import '../styles/style.css';
@@ -37,9 +38,9 @@ class Projects extends Component {
         {title: 'Kocoon version 2.0', desc:'We provide the latest information on wellbeing topics by working with charities, services and academics.', image: {src: KocoonV2, alt: 'KocoonV2Img'}},
         {title: 'Kocoon', desc:'We are an educational platform that focuses on the wellbeing by presenting academic papers for everyone.' , image: {src: kocoon, alt: 'kocoon'}},
         {title: 'Blog website', desc:'This was a coding test, which had me create a fully responsive blog website from a UX/UI design. This website which uses HTML, SASS, JavaScript & Responsive Design.', image: {src: BlogWebsite, alt: 'BlogWebsiteImg'}},
-        {title: 'Food Delivery Website', desc: 'I created a fully responsive real estate website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design', image: {src: FoodDX, alt: 'FoodDX_IMG'}},
-        {title: 'The Modern House Landing-Page', desc: 'I created a fully responsive real estate website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design.', image: {src: ModernHouse, alt: 'ModernHouseImg'}},
-        {title: 'Interior-Design-Landing-Page', desc:'I created a fully responsive furniture website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design.', image: {src: Interior, alt: 'InteriorImg'}},
+        {title: 'Food Delivery Website', desc: 'I created a fully responsive real estate website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design', image: {src: FoodDX, alt: 'FoodDX_IMG'}, feature: true},
+        {title: 'The Modern House Landing-Page', desc: 'I created a fully responsive real estate website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design.', image: {src: ModernHouse, alt: 'ModernHouseImg'}, feature: true},
+        {title: 'Interior-Design-Landing-Page', desc:'I created a fully responsive furniture website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design.', image: {src: Interior, alt: 'InteriorImg'}, feature: true},
         {title: 'HoneyPot Furniture', desc:'This was a coding test, which had me create a fully responsive ecommerce website from a UX/UI design. This website which uses HTML, SASS, JavaScript & Responsive Design.', image: {src: HoneyPot, alt: 'HoneyPotImg'}},
         {title: 'FetchAPIs.com',desc:'Full stack website which was has a API tracker for Covid data, weather data and movie data. Website uses HTML, SASS, JavaScript, PHP, MYSQL & Responsive Design.1. API integrations (Covid data, weather data, movie data)', image: {src: FetchAPIs, alt: 'FetchAPIsImg'}},
         {title: 'Burger Palace', desc:'Full stack website which was designed for a fast food chain company called "Burger Palace". Website uses HTML, SASS, JavaScript, PHP & Responsive Design', image: {src: BurgerPalace, alt: 'BurgerPalaceImg'}},
@@ -54,8 +55,12 @@ class Projects extends Component {
         ]
 
         return (
+            // projects.map((value, key) => (
+            //     <Project_Item key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt}/>
+            // ))
+            
             projects.map((value, key) => (
-                <Project_Item key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt}/>
+                <Featured_projects key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt} feature={value.feature}/>
             ))
         )
     }

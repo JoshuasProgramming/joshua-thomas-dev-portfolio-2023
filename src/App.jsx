@@ -1,8 +1,9 @@
 import React from 'react'
-// import Projects from './components/Projects';
+import Projects from './components/Projects';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Languages from './components/Languages';
+import Featured_projects from './components/Featured_projects';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Navigation />
       <Hero />
       <Languages/>
+      <Featured_projects/>
+      <Projects />
     </>
   );
 }
