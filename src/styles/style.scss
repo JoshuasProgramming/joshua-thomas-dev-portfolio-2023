@@ -239,9 +239,11 @@ nav{
 .project-card{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     padding-top: 25px;
+    width: 900px;
+    margin: auto;
 
     .left{
         img{
@@ -250,8 +252,25 @@ nav{
             border-radius: 11px;
         }
     }
-}
 
-.project-card:first-child{
-    padding-top: 205px;
+    .right{
+        h1{
+            color: rgba(255,251,251,.937254902);
+            font-weight: 700;
+            font-size: 28px;
+            font-family: system-ui;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        p{
+            font-family: $primary-font;
+            color: $primary-color;
+            font-weight: 400;
+            font-size: 13px;
+            text-align: left;
+            padding-bottom: 21px;
+            padding-left: 20px;
+        }
+    }
 }
