@@ -29,6 +29,7 @@ class Navigation extends Component {
                         {navigationLinks.map((value, key) => (
 
                             value.name == 'nightmode' ? 
+                            
                             <div className="night-light-mode-icon">
                                 <img src={value.image.src} alt={value.image.alt} />
                             </div>
@@ -36,7 +37,6 @@ class Navigation extends Component {
                             :
 
                             <li key={key}> {value.name} </li>
-
                         ))}
                     </div>
                 </ul>

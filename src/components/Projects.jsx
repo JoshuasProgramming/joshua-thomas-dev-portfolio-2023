@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import Project_Item from './Project_item';
 import Featured_projects from './Featured_projects';
+import Featured_projects_language from './Featured_projects_language';
 
 //style imports
 import '../styles/style.css';
@@ -38,7 +39,7 @@ class Projects extends Component {
         {title: 'Kocoon version 2.0', desc:'We provide the latest information on wellbeing topics by working with charities, services and academics.', image: {src: KocoonV2, alt: 'KocoonV2Img'}},
         {title: 'Kocoon', desc:'We are an educational platform that focuses on the wellbeing by presenting academic papers for everyone.' , image: {src: kocoon, alt: 'kocoon'}},
         {title: 'Blog website', desc:'This was a coding test, which had me create a fully responsive blog website from a UX/UI design. This website which uses HTML, SASS, JavaScript & Responsive Design.', image: {src: BlogWebsite, alt: 'BlogWebsiteImg'}},
-        {title: 'Food Delivery Website', desc: 'I created a fully responsive real estate website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design', image: {src: FoodDX, alt: 'FoodDX_IMG'}, feature: true, date: 'March 31st 2022'},
+        {title: 'Food Delivery Website', desc: 'I created a fully responsive real estate website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design', image: {src: FoodDX, alt: 'FoodDX_IMG'}, feature: true, date: 'March 31st 2022' },
         {title: 'The Modern House Landing-Page', desc: 'I created a fully responsive real estate website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design.', image: {src: ModernHouse, alt: 'ModernHouseImg'}, feature: true, date: 'March 22nd 2022'},
         {title: 'Interior-Design-Landing-Page', desc:'I created a fully responsive furniture website from viewing a UX/UI design online. This website uses HTML, SASS & Responsive Design.', image: {src: Interior, alt: 'InteriorImg'}, feature: true, date: 'March 19th 2022'},
         {title: 'HoneyPot Furniture', desc:'This was a coding test, which had me create a fully responsive ecommerce website from a UX/UI design. This website which uses HTML, SASS, JavaScript & Responsive Design.', image: {src: HoneyPot, alt: 'HoneyPotImg'}},
@@ -54,13 +55,15 @@ class Projects extends Component {
         {title: 'Personal portfolio 2022', desc:'Front End website which contains my portfolio. Website uses HTML, CSS & Responsive Design', image: {src: portfolio2022, alt: 'Portfolio2022IMG'}},
         ]
 
+        console.log(JSON.stringify(projects.title));
+
         return (
             // projects.map((value, key) => (
             //     <Project_Item key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt}/>
             // ))
             
             projects.map((value, key) => (
-                <Featured_projects key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt} feature={value.feature} date={value.date}/>
+                <Featured_projects key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt} feature={value.feature} date={value.date} language={value.languages}/>
             ))
         )
     }

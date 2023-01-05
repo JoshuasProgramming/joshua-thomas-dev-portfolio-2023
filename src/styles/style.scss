@@ -277,10 +277,46 @@ nav{
             font-family: $primary-font;
             color: $primary-color;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 16px;
             text-align: left;
             padding-bottom: 21px;
             padding-left: 20px;
+        }
+    }
+}
+
+
+///////////////////////////////////featured-projects-language-container//////////////////////////////////
+.featured-projects-language-container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    padding-left: 20px;
+
+    div{
+        background: $primary-color;
+        border-radius: 10px;
+        border-radius: 5px;
+        width: fit-content;
+        height: 27px;
+        display: flex;
+        align-items: center;
+        transition: .9s ease-in-out;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+        background: #4343f4;
+
+        h3{
+            color: black;
+            font-size: 13px;
+            text-align: center;
+            margin: auto;
+            font-family: $primary-font;
+            color: $primary-color;
         }
     }
 }
