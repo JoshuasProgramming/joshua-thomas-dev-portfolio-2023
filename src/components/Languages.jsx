@@ -31,7 +31,7 @@ class Languages extends Component {
         return(
             <div className="icon-container">
                 <div className="top">
-                    <p>Languages which I use</p>
+                    <p>Languages which I use &#8650;</p>
                 </div>
                 
                 <div className="icons">
