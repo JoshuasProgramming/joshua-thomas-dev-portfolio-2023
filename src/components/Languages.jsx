@@ -9,6 +9,7 @@ import php from '../icons/php.png';
 import Sass from '../icons/sass.png';
 import Css from '../icons/css.png';
 import Html from '../icons/html.png';
+import bigcommerce from '../icons/bigcommerce.png';
 
 //style imports
 import '../styles/style.css';
@@ -23,7 +24,8 @@ class Languages extends Component {
             {images: {src: php, alt: 'php-image'}, name: 'php'},
             {images: {src: Sass, alt: 'sass-image'}, name: 'SASS / SCSS'},
             {images: {src: Css, alt: 'css-image'}, name: 'CSS'},
-            {images: {src: Html, alt: 'html-image'}, name: 'HTML'}
+            {images: {src: Html, alt: 'html-image'}, name: 'HTML'},
+            {images: {src: bigcommerce, alt: 'bigcommerce-image'}, name: 'bigcommerce'}
         ];
 
         return(
