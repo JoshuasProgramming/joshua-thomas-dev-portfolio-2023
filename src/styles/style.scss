@@ -235,6 +235,21 @@ nav{
     }
 }
 
+////////////////////////////////////featured-projects-heading///////////////////////
+.featured-projects-heading{
+    margin: auto;
+
+    p{
+        text-align: center;
+        font-family: system-ui;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+}
+
 ///////////////////////////////////project-card//////////////////////////////////
 .project-card{
     display: flex;
@@ -251,6 +266,11 @@ nav{
             width: 420px;
             height: auto;
             border-radius: 11px;
+        }
+        .live-site{
+            position: absolute;
+            
+            // visibility: hidden;
         }
     }
 
@@ -285,23 +305,24 @@ nav{
         }
 
         .info{
-            width: 345px;
-            height: 27px;
+            width: 400px;
+            height: 21px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             transition: .9s ease-in-out;
-            margin-top: 5px;
-            margin-bottom: 5px;
+            margin-top: -15px;
+            margin-bottom: 22px;
             padding-right: 10px;
-            padding-left: 10px;
+            padding-left: 9px;
             margin-right: 10px;
             margin-left: 12px;
 
             a{
                 color: $primary-color;
                 font-family: $primary-font;
-                font-size: 22px;
+                font-size: 18px;
+                text-align: center;
                 // text-decoration: underline;
                 letter-spacing: .1px;
                 transition: .4s ease-in-out;
@@ -315,7 +336,6 @@ nav{
         }
     }
 }
-
 
 ///////////////////////////////////featured-projects-language-container//////////////////////////////////
 .featured-projects-language-container{
@@ -348,6 +368,8 @@ nav{
             margin: auto;
             font-family: $primary-font;
             color: $primary-color;
+            transition: .4s ease-in-out;
         }
+
     }
 }

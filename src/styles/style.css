@@ -189,6 +189,19 @@ nav .navigation .right .night-light-mode-icon:hover {
   transition: 0.4s ease-in-out;
 }
 
+.featured-projects-heading {
+  margin: auto;
+}
+.featured-projects-heading p {
+  text-align: center;
+  font-family: system-ui;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
 .project-card {
   display: flex;
   align-items: center;
@@ -203,6 +216,9 @@ nav .navigation .right .night-light-mode-icon:hover {
   width: 420px;
   height: auto;
   border-radius: 11px;
+}
+.project-card .left .live-site {
+  position: absolute;
 }
 .project-card .right h1 {
   color: rgba(255, 251, 251, 0.937254902);
@@ -231,23 +247,24 @@ nav .navigation .right .night-light-mode-icon:hover {
   padding-left: 20px;
 }
 .project-card .right .info {
-  width: 345px;
-  height: 27px;
+  width: 400px;
+  height: 21px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: 0.9s ease-in-out;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: -15px;
+  margin-bottom: 22px;
   padding-right: 10px;
-  padding-left: 10px;
+  padding-left: 9px;
   margin-right: 10px;
   margin-left: 12px;
 }
 .project-card .right .info a {
   color: #ffffff;
   font-family: system-ui;
-  font-size: 22px;
+  font-size: 18px;
+  text-align: center;
   letter-spacing: 0.1px;
   transition: 0.4s ease-in-out;
   cursor: pointer;
@@ -289,4 +306,5 @@ nav .navigation .right .night-light-mode-icon:hover {
   margin: auto;
   font-family: system-ui;
   color: #ffffff;
+  transition: 0.4s ease-in-out;
 }/*# sourceMappingURL=style.css.map */

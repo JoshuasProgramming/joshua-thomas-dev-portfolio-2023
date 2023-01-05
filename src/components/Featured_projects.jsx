@@ -22,9 +22,7 @@ const Featured_projects = (props) => {
                     <Featured_projects_language/>
                     <p>{props.desc}</p>
                     <div className="info">
-                        <a>live site</a>
-                        <a>source code</a>
-                        <a>read more</a>
+                        <a>Read more &#x27A4;</a>
                     </div>
                 </div>
             </div>

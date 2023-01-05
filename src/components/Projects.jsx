@@ -55,13 +55,10 @@ class Projects extends Component {
         {title: 'Personal portfolio 2022', desc:'Front End website which contains my portfolio. Website uses HTML, CSS & Responsive Design', image: {src: portfolio2022, alt: 'Portfolio2022IMG'}},
         ]
 
-        console.log(JSON.stringify(projects.title));
-
         return (
             // projects.map((value, key) => (
             //     <Project_Item key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt}/>
             // ))
-            
             projects.map((value, key) => (
                 <Featured_projects key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt} feature={value.feature} date={value.date} language={value.languages}/>
             ))
