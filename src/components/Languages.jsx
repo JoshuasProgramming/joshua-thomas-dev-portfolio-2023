@@ -17,11 +17,11 @@ class Languages extends Component {
 
         const icons = [
             {images: {src: ReactIcon, alt: 'react-image'}, name: 'react'},
-            {images: {src: JS, alt: 'js-image'}},
-            {images: {src: json, alt: 'json-image'}},
-            {images: {src: Sass, alt: 'sass-image'}},
-            {images: {src: Css, alt: 'css-image'}},
-            {images: {src: Html, alt: 'html-image'}}
+            {images: {src: JS, alt: 'js-image'}, name: 'javascript (ES6 / ES7)'},
+            {images: {src: json, alt: 'json-image'}, name: 'json'},
+            {images: {src: Sass, alt: 'sass-image'}, name: 'SASS / SCSS'},
+            {images: {src: Css, alt: 'css-image'}, name: 'CSS'},
+            {images: {src: Html, alt: 'html-image'}, name: 'HTML'}
         ];
 
         return(
