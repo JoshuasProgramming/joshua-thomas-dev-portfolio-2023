@@ -4,6 +4,10 @@ import React, { Component, useState } from 'react';
 //import components 
 import Featured_projects_language from './Featured_projects_language';
 
+//import icons
+import github from '../icons/github.png';
+import openLink from '../icons/openLink.png';
+
 //style imports
 import '../styles/style.css';
 
@@ -23,6 +27,8 @@ const Featured_projects = (props) => {
                     <p>{props.desc}</p>
                     <div className="info">
                         <a>Read more &#x27A4;</a>
+                        <img src={github}/>
+                        <img src={openLink}/>
                     </div>
                 </div>
             </div>
