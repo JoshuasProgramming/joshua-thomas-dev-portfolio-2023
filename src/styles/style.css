@@ -217,9 +217,6 @@ nav .navigation .right .night-light-mode-icon:hover {
   height: auto;
   border-radius: 11px;
 }
-.project-card .left .live-site {
-  position: absolute;
-}
 .project-card .right h1 {
   color: rgba(255, 251, 251, 0.937254902);
   font-weight: 700;
