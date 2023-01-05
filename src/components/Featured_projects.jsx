@@ -27,8 +27,14 @@ const Featured_projects = (props) => {
                     <p>{props.desc}</p>
                     <div className="info">
                         <a>Read more &#x27A4;</a>
-                        <img src={github}/>
-                        <img src={openLink}/>
+                        <a href={props.githubRepo} target="_blank">
+                            <img src={github}/>
+                        </a>
+                        
+                        <a href={props.openLink} target="_blank">
+                            <img src={openLink}/>
+                        </a>
+                        
                     </div>
                 </div>
             </div>
