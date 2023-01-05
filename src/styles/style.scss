@@ -247,7 +247,7 @@ nav{
 
     .left{
         img{
-            width: 390px;
+            width: 420px;
             height: auto;
             border-radius: 11px;
         }
@@ -263,11 +263,21 @@ nav{
             padding-left: 20px;
         }
 
+        h4{
+            font-family: $primary-font;
+            color: $primary-color;
+            font-weight: 400;
+            font-size: 10px;
+            text-align: left;
+            padding-bottom: 3px;
+            padding-left: 20px;
+        }
+
         p{
             font-family: $primary-font;
             color: $primary-color;
             font-weight: 400;
-            font-size: 13px;
+            font-size: 14px;
             text-align: left;
             padding-bottom: 21px;
             padding-left: 20px;

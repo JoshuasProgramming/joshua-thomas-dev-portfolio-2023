@@ -14,6 +14,7 @@ const Featured_projects = (props) => {
                 </div>
                 <div className="right">
                     <h1>{props.title}</h1>
+                    <h4>{props.date}</h4>
                     <p>{props.desc}</p>
                 </div>
             </div>

@@ -60,7 +60,7 @@ class Projects extends Component {
             // ))
             
             projects.map((value, key) => (
-                <Featured_projects key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt} feature={value.feature}/>
+                <Featured_projects key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt} feature={value.feature} date={value.date}/>
             ))
         )
     }
