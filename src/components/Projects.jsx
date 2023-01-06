@@ -56,9 +56,6 @@ class Projects extends Component {
         ]
 
         return (
-            // projects.map((value, key) => (
-            //     <Project_Item key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt}/>
-            // ))
             projects.map((value, key) => (
                 <Featured_projects key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt} feature={value.feature} date={value.date} language={value.languages} openLink={value.openLink} githubRepo={value.githubRepo} language1={value.language1} language2={value.language2} language3={value.language3} language4={value.language4}/>
             ))
