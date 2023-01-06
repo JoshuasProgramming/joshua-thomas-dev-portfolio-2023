@@ -38,7 +38,6 @@ const Featured_projects = (props) => {
                     </div>
                 </div>
             </div>
-            
         )
     }
 }
