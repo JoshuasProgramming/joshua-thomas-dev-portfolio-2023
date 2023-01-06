@@ -7,6 +7,7 @@ const Featured_projects_language = () => {
         <div><h3>HTML</h3></div>
         <div><h3>SCSS</h3></div>
         <div><h3>Responsive Design</h3></div>
+        <div><h3>CSS Grid layout</h3></div>
     </div>
     )
 }
