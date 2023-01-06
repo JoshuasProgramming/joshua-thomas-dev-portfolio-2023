@@ -14,7 +14,6 @@ import '../styles/style.css';
 const Featured_projects = (props) => {   
     
     if(props.feature == true){
-        // props.language == undefined ? false : console.log(props.language + " " + props.title);
         return (
             <div className="project-card">
                 <div className="left">
