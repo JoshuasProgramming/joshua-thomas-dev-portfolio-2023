@@ -7,6 +7,7 @@ import Featured_projects_language from './Featured_projects_language';
 //import icons
 import github from '../icons/github.png';
 import openLink from '../icons/openLink.png';
+import youtube from '../icons/youtube.png';
 
 //style imports
 import '../styles/style.css';
@@ -33,7 +34,19 @@ const Featured_projects = (props) => {
                         <a href={props.openLink} target="_blank">
                             <img src={openLink}/>
                         </a>
-                        
+
+                        {props.youtubeVideo == true ? 
+
+                        <a href='#' target="_blank">
+                            <img src={youtube}/>
+                        </a>
+
+                        :
+
+                        false
+
+                        }
+
                     </div>
                 </div>
             </div>
