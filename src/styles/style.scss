@@ -36,14 +36,18 @@ body{
 
 ////////////////////////////////////navigation////////////////////////////////////
 nav{
+    position: fixed;
+    z-index: 9999;
+    width: -webkit-fill-available;
+    box-shadow: 0 10px 25px -10px #6565ca;
+
     .navigation{
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: row;
         background: $primary-background;
-        background: transparent;
-        min-height: 100px;
+        min-height: 56px;
 
         .left{
             font-family: $primary-font;
@@ -122,7 +126,7 @@ nav{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 140px;
 
     p{
         font-family: $primary-font;
