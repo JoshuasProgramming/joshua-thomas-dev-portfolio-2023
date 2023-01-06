@@ -37,7 +37,7 @@ const Featured_projects = (props) => {
 
                         {props.youtubeVideo == true ? 
 
-                        <a href='#' target="_blank">
+                        <a href={props.youtubeLink} target="_blank">
                             <img src={youtube}/>
                         </a>
 
