@@ -8,6 +8,7 @@ const Featured_projects_language = (props) => {
         <div><h3>{props.language2}</h3></div>
         <div><h3>{props.language3}</h3></div>
         <div><h3>{props.language4}</h3></div>
+        <div><h3>{props.language5}</h3></div>
     </div>
     )
 }

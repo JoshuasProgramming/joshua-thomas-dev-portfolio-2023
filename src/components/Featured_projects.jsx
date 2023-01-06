@@ -23,7 +23,7 @@ const Featured_projects = (props) => {
                 <div className="right">
                     <h1>{props.title}</h1>
                     <h4>{props.date}</h4>
-                    <Featured_projects_language language1={props.language1} language2={props.language2} language3={props.language3} language4={props.language4}/>
+                    <Featured_projects_language language1={props.language1} language2={props.language2} language3={props.language3} language4={props.language4} language5={props.language5}/>
                     <p>{props.desc}</p>
                     <div className="info">
                         <a>Read more &#x27A4;</a>
