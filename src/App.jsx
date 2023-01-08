@@ -33,7 +33,7 @@ function App() {
 
               <div className="right">
 
-                <Link to="pages/projects_page">Projects</Link>
+                <Link to="pages/Project_page">Projects</Link>
                 <Link to="/blog">Blog</Link>
                 <Link to="/about">About</Link>
 
@@ -46,22 +46,10 @@ function App() {
 
         <Routes>
           <Route path='/' element={<Home/>}/>
-        </Routes>
-
-        <Routes>
-          <Route path="pages/project_page" element={ <Project_page/> }/>
+          <Route path="pages/Project_page" element={ <Project_page/> }/>
         </Routes>
 
       </Router>
-
-      
-      {/* <Hero />
-      <Languages/>
-      <Featured_projects_heading/>
-      <Featured_projects/>
-      <Projects />
-      <View_All_projects_btn/>
-      <Contact_section/> */}
     </>
   );
 }
