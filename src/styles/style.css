@@ -37,6 +37,9 @@ nav .navigation .left {
   font-family: system-ui;
   color: #ffffff;
 }
+nav .navigation .left a {
+  text-decoration: none;
+}
 nav .navigation .left h1 {
   font-weight: 300;
   font-size: 25px;
