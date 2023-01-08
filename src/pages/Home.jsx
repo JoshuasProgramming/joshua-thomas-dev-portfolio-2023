@@ -8,9 +8,7 @@ import View_All_projects_btn from '../components/View_All_projects_btn';
 import Contact_section from '../components/contact_section';
 
 function Home() {
-  return (
-    // <Projects />
-  
+  return (  
     <> 
       <Hero />
       <Languages/>

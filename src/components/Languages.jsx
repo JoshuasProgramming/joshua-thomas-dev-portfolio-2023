@@ -41,9 +41,7 @@ class Languages extends Component {
                     ))
                 }
                 </div>
-                
             </div>
-           
         )
     }
 }
