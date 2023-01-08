@@ -1,8 +1,9 @@
 //react imports 
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 
 //import components 
 import Featured_projects_language from './Featured_projects_language';
+import View_All_Projects from '../components/View_All_Projects';
 
 //import icons
 import github from '../icons/github.png';
@@ -13,7 +14,6 @@ import youtube from '../icons/youtube.png';
 import '../styles/style.css';
 
 const Featured_projects = (props) => {   
-    
     if(props.feature == true){
         return (
             <div className="project-card">

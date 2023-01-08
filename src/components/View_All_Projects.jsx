@@ -1,9 +1,13 @@
 //react imports 
 import React, { Component } from 'react';
-import Project_Item from './Project_item';
-import Featured_projects from './Featured_projects';
+
+//import components 
 import Featured_projects_language from './Featured_projects_language';
-import View_All_Projects from './View_All_Projects';
+
+//import icons
+import github from '../icons/github.png';
+import openLink from '../icons/openLink.png';
+import youtube from '../icons/youtube.png';
 
 //style imports
 import '../styles/style.css';
@@ -30,7 +34,7 @@ import NumberGuessingGame from '../images/number guessing game.JPG';
 import portfolio2022 from '../images/portfolio.JPG';
 
 
-class Projects extends Component {
+class View_All_Projects extends Component {
     render(){
         
         const projects = [
@@ -58,13 +62,43 @@ class Projects extends Component {
 
         return (
             projects.map((value, key) => (
-                <>
-                <Featured_projects key={key} title={value.title} desc={value.desc} image={value.image.src} alt={value.image.alt} feature={value.feature} date={value.date} openLink={value.openLink} githubRepo={value.githubRepo} language1={value.language1} language2={value.language2} language3={value.language3} language4={value.language4} language5={value.language5} youtubeVideo={value.youtubeVideo} youtubeLink={value.youtubeLink} />
-                
-                </>
+                <div className="project-card" key={key}>
+                    <div className="left">
+                        <img src={value.image.src} alt={value.image.alt}/>
+                    </div>
+                    <div className="right">
+                        <h1>{value.title}</h1>
+                        <h4>{value.date}</h4>
+                        <Featured_projects_language language1={value.language1} language2={value.language2} language3={value.language3} language4={value.language4} language5={value.language5}/>
+                        <p>{value.desc}</p>
+                        <div className="info">
+                            <a>Read more &#x27A4;</a>
+                            <a href={value.githubRepo} target="_blank">
+                                <img src={github}/>
+                            </a>
+                            
+                            <a href={value.openLink} target="_blank">
+                                <img src={openLink}/>
+                            </a>
+
+                            {value.youtubeVideo == true ? 
+
+                            <a href={value.youtubeLink} target="_blank">
+                                <img src={youtube}/>
+                            </a>
+
+                            :
+
+                            false
+
+                            }
+
+                        </div>
+                    </div>
+                </div>
             ))
         )
     }
 }
 
-export default Projects;
+export default View_All_Projects
