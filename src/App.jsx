@@ -30,8 +30,8 @@ function App() {
             <div className="right">
 
               <Link to="pages/projects">Projects</Link>
-              <Link to="pages/blog">blog</Link>
-              <Link to="pages/about">about</Link>
+              <Link to="pages/blog">Blog</Link>
+              <Link to="pages/about">About</Link>
 
               <div className="night-light-mode-icon">
                   <img src={nightMode} alt="nightmode-icon" />
