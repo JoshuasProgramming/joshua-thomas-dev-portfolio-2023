@@ -8,11 +8,14 @@ import Featured_projects from './components/Featured_projects';
 import View_All_projects_btn from './components/View_All_projects_btn';
 import Contact_section from './components/contact_section';
 
+import { createBrowserRouter, Route, RouterProvider} from 'react-router-dom';
+
 function App() {
   return (
     // <Projects />
   
     <>
+      
       <Navigation />
       <Hero />
       <Languages/>
