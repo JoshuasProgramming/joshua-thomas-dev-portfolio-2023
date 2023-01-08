@@ -8,15 +8,41 @@ import Featured_projects from './components/Featured_projects';
 import View_All_projects_btn from './components/View_All_projects_btn';
 import Contact_section from './components/contact_section';
 
-import { createBrowserRouter, Route, RouterProvider} from 'react-router-dom';
+//image imports
+import nightMode from './images/nightmode.svg';
+
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 function App() {
   return (
     // <Projects />
   
     <>
+
+      <Router>
+      <nav>
+        <ul className="navigation">
+            <div className="left">
+                <h1><span>Joshua</span>Thomas.</h1>
+            </div>
+
+            <div className="right">
+
+              <Link to="pages/projects">Projects</Link>
+              <Link to="pages/blog">blog</Link>
+              <Link to="pages/about">about</Link>
+
+              <div className="night-light-mode-icon">
+                  <img src={nightMode} alt="nightmode-icon" />
+              </div>
+            </div>
+        </ul>
+      </nav>
+
+      </Router>
+
       
-      <Navigation />
       <Hero />
       <Languages/>
       <Featured_projects_heading/>

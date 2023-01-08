@@ -59,7 +59,7 @@ nav .navigation .right {
   flex-direction: row;
   width: 325px;
 }
-nav .navigation .right li {
+nav .navigation .right a {
   list-style-type: none;
   font-family: system-ui;
   color: #ffffff;
@@ -67,8 +67,9 @@ nav .navigation .right li {
   cursor: pointer;
   transition: 0.6s ease-in-out;
   font-weight: bold;
+  text-decoration: none;
 }
-nav .navigation .right li:hover {
+nav .navigation .right a:hover {
   color: #6565ca;
   transition: 0.6s ease-in-out;
 }

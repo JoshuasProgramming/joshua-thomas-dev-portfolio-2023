@@ -79,7 +79,7 @@ nav{
             flex-direction: row;
             width: 325px;
 
-            li{
+            a{
                 list-style-type: none;
                 font-family: $primary-font;
                 color: $primary-color;
@@ -87,12 +87,15 @@ nav{
                 cursor: pointer;
                 transition: .6s ease-in-out;
                 font-weight: bold;
+
+                text-decoration: none;
             }
 
-            li:hover{
+            a:hover{
                 color: #6565ca;
                 transition: .6s ease-in-out;
             }
+
 
             .night-light-mode-icon{
                 background: $span-color;
