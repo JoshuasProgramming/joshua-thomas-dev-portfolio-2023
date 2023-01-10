@@ -10,6 +10,7 @@ function projects_page() {
   return (
     <>
     {/* <Projects/> */}
+    <section class="hero-section"><p><span>All Projects</span> </p></section>
     <View_All_Projects/>
     </>
   )
