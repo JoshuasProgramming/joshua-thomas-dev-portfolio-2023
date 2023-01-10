@@ -14,7 +14,7 @@ export default function contact_section() {
           <p className='text'>If you would like to discuss your project further or have any questions, please don't hesitate to contact me.</p>
     
           <div className="cv-container">
-            <a>Email Me</a>
+            <a href="mailto:joshuathomas2852@gamil.com">Email Me</a>
           </div>
       </section>
     )
