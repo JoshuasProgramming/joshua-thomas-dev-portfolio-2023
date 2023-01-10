@@ -9,7 +9,6 @@ const Featured_projects_language = (props) => {
         {props.language3 != undefined ?  <div><h3>{props.language3}</h3></div> : false}
         {props.language4 != undefined ?  <div><h3>{props.language4}</h3></div> : false}
         {props.language5 != undefined ?  <div><h3>{props.language5}</h3></div> : false}
-       
     </div>
     )
 }
