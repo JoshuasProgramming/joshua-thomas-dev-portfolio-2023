@@ -10,7 +10,11 @@ function projects_page() {
   return (
     <>
     {/* <Projects/> */}
-    <section class="hero-section"><p><span>All Projects</span> </p></section>
+    <section class="hero-section project-page">
+      <p className='text'>All projects show my progression as</p>
+      <p><div className='purple-text'>a Full Stack Engineer</div></p>
+    </section>
+        
     <View_All_Projects/>
     </>
   )
