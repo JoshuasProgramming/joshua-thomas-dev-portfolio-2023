@@ -32,6 +32,7 @@ import CompoundInterest from '../images/compound interest calculator.JPG';
 import WeightConverter from '../images/Weight Converter.JPG';
 import NumberGuessingGame from '../images/number guessing game.JPG';
 import portfolio2022 from '../images/portfolio.JPG';
+import portfolio2023 from '../images/portfolio2023.png';
 
 
 class View_All_Projects extends Component {
@@ -56,8 +57,8 @@ class View_All_Projects extends Component {
         {title: 'Compound Interest Calculator', desc:'Front End website for compound interest. Website uses HTML, SASS, JavaScript & Responsive Design', image: {src: CompoundInterest, alt: 'CompoundInterestIMG'}, feature:false, featureAll:true, date:'February 9th 2022', openLink:'https://joshuasprogramming.github.io/Compound-Interest-Calculator-Responsive/', githubRepo:'https://github.com/JoshuasProgramming/Compound-Interest-Calculator-Responsive', language1: 'HTML', language2:'SCSS', language3:'JavaScript', language4: 'Responsive Design'},
         {title: 'Weight Converter', desc:'Front End website for a weight converter. Website uses HTML, SASS, JavaScript & Responsive Design', image: {src: WeightConverter, alt: 'WeightConverterIMG'}, feature:false, featureAll:true, date:'February 12th 2022',openLink:'https://joshuasprogramming.github.io/Weight-Converter-Responsive/', githubRepo:'https://github.com/JoshuasProgramming/Weight-Converter-Responsive',language1: 'HTML', language2:'SCSS', language3:'JavaScript', language4: 'Responsive Design'},
         {title: 'Number Guessing Game', desc:'Front End website for a number guessing game. Website uses HTML, SASS, JavaScript & Responsive Design', image: {src: NumberGuessingGame, alt: 'NumberGuessingGameIMG'}, feature:false, featureAll:true, date:'February 12th 2022', openLink:'https://joshuasprogramming.github.io/Number-Guessing-Game-Responsive/', githubRepo:'https://github.com/JoshuasProgramming/Number-Guessing-Game-Responsive',language1: 'HTML', language2:'SCSS', language3:'JavaScript', language4: 'Responsive Design'},
-        // {title: 'Personal portfolio 2023', desc:'Front End website which contains my portfolio. Website uses HTML, CSS & Responsive Design for 2023'},
         {title: 'Personal portfolio 2022', desc:'Front End website which contains my portfolio. Website uses HTML, CSS & Responsive Design', image: {src: portfolio2022, alt: 'Portfolio2022IMG'}, feature:false, featureAll:true, date:'july 18th 2022', openLink:'https://joshuasprogramming.github.io/Joshua-Thomas-Dev-Portfolio/', githubRepo:'https://github.com/JoshuasProgramming/Joshua-Thomas-Dev-Portfolio',language1: 'HTML', language2:'SCSS', language3:'JavaScript', language4: 'Responsive Design'},
+        {title: 'Personal portfolio 2023', desc:'Front End website for 2023', image:{src: portfolio2023, alt: 'Portfolio2023IMG'}, feature:false, featureAll:true}
         ]
 
         return (
