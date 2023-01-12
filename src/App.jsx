@@ -61,7 +61,7 @@ function App() {
 
         <div className="bottom-right-social-links">
           <div className="social-navigation">
-            <a href="mailto:joshuathomas2852@gamil.com">joshuathomas2852@gmail.com</a>
+            <a href="mailto:joshuathomas2852@gamil.com" title='email'>joshuathomas2852@gmail.com</a>
           </div>
         </div>
 
