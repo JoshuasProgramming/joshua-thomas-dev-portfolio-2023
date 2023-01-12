@@ -11,6 +11,10 @@ import Contact_section from './components/contact_section';
 //image imports
 import nightMode from './images/nightmode.svg';
 
+//import social media icons
+import github from './socials/github.png';
+import linkedin from './socials/linkedin.png';
+
 //import react router
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
@@ -43,6 +47,13 @@ function App() {
               </div>
           </ul>
         </nav>
+
+        <div className="bottom-left-social-links">
+          <ul className="social-navigation">
+            <li><img src={github} alt="github-social-icon" /></li>
+            <li><img src={linkedin} alt="linkedin-social-icon" /></li>
+          </ul>
+        </div>
 
         <Routes>
           <Route path='/' element={<Home/>}/>
