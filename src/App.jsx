@@ -15,6 +15,7 @@ import nightMode from './images/nightmode.svg';
 import github from './socials/github.png';
 import linkedin from './socials/linkedin.png';
 import instagram from './socials/instagram.png';
+import codepen from './socials/codepen.png';
 
 //import react router
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
@@ -53,7 +54,15 @@ function App() {
           <ul className="social-navigation">
             <li><img title="github" src={github} alt="github-social-icon" /></li>
             <li><img title="linkedin" src={linkedin} alt="linkedin-social-icon" /></li>
+            <li><img title="instagram" src={instagram} alt="instagram-social-icon" /></li>
+            <li><img title="codepen" src={codepen} alt="codepen-social-icon" /></li>
           </ul>
+        </div>
+
+        <div className="bottom-right-social-links">
+          <div className="social-navigation">
+            <a href="mailto:joshuathomas2852@gamil.com">joshuathomas2852@gmail.com</a>
+          </div>
         </div>
 
         <Routes>
