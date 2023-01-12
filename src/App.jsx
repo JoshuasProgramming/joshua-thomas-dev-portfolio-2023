@@ -51,8 +51,8 @@ function App() {
 
         <div className="bottom-left-social-links">
           <ul className="social-navigation">
-            <li><img src={github} alt="github-social-icon" /></li>
-            <li><img src={linkedin} alt="linkedin-social-icon" /></li>
+            <li><img title="github" src={github} alt="github-social-icon" /></li>
+            <li><img title="linkedin" src={linkedin} alt="linkedin-social-icon" /></li>
           </ul>
         </div>
 
