@@ -27,8 +27,6 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    // <Projects />
-  
     <>
       <Router>
         <nav>
