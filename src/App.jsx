@@ -14,6 +14,7 @@ import nightMode from './images/nightmode.svg';
 //import social media icons
 import github from './socials/github.png';
 import linkedin from './socials/linkedin.png';
+import instagram from './socials/instagram.png';
 
 //import react router
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
