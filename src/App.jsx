@@ -19,7 +19,6 @@ import codepen from './socials/codepen.png';
 
 //import react router
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 //import pages
 import Project_page from './pages/Project_page';
