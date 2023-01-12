@@ -52,8 +52,8 @@ function App() {
 
         <div className="bottom-left-social-links">
           <ul className="social-navigation">
-            <li><img title="github" src={github} alt="github-social-icon" /></li>
-            <li><img title="linkedin" src={linkedin} alt="linkedin-social-icon" /></li>
+            <a href="https://github.com/JoshuasProgramming" target="_blank"><li><img title="github" src={github} alt="github-social-icon" /></li></a>
+            <a href="https://www.linkedin.com/in/joshua-thomas-dev/" target="_blank"><li><img title="linkedin" src={linkedin} alt="linkedin-social-icon" /></li></a>
             <li><img title="instagram" src={instagram} alt="instagram-social-icon" /></li>
             <li><img title="codepen" src={codepen} alt="codepen-social-icon" /></li>
           </ul>
