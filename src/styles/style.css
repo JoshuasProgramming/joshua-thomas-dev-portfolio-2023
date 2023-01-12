@@ -300,7 +300,6 @@ nav .navigation .right .night-light-mode-icon:hover {
 .project-card {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   flex-direction: row;
   padding-top: 25px;
   padding-bottom: 25px;
