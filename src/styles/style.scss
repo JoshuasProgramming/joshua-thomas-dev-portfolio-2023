@@ -616,3 +616,41 @@ nav{
         };
     }
 }
+
+//////////////////////////////////testimonials//////////////////////////////////
+.testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 53px;
+    height: 460px;
+
+    p{
+        font-family: $primary-font;
+        color: $primary-color;
+        font-weight: 400;
+        font-size: 23px;
+        text-align: center;
+
+        span{
+            color: $span-color;
+            font-weight: 700;
+            font-size: 28px;
+        }
+    }
+
+    .text{
+        background: -webkit-linear-gradient(45deg, $primary-color, rgb(202, 202, 202));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 836px;
+        padding-bottom: 25px;
+    }
+
+    img{
+        width: 220px;
+        height: auto;
+        border-radius: 176px;
+    }
+}
