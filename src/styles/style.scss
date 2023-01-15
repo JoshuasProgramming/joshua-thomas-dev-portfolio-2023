@@ -640,6 +640,30 @@ nav{
         }
     }
 
+    .testimonials-info{
+        border-radius: 5px;
+        width: fit-content;
+        height: 27px;
+        display: flex;
+        align-items: center;
+        transition: .9s ease-in-out;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+        background: -webkit-linear-gradient(45deg, #6565ca, #4343f4);
+
+        h3{
+            font-size: 13px;
+            text-align: center;
+            margin: auto;
+            font-family: system-ui;
+            color: #fff;
+            transition: .4s ease-in-out;
+        }
+    }
+
     .text{
         background: -webkit-linear-gradient(45deg, $primary-color, rgb(202, 202, 202));
         -webkit-background-clip: text;
