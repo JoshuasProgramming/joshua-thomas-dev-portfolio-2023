@@ -2,6 +2,9 @@ import React from 'react'
 
 import testimonial1 from '../testimonial_images/testimonial 1.png';
 
+//style imports
+import '../styles/style.css';
+
 function testimonials() {
   return (
     <div className="testimonials">
