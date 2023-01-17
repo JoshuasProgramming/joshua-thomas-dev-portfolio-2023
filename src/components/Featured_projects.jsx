@@ -1,6 +1,8 @@
 //react imports 
 import React, { Component } from 'react';
 
+import { LazyLoadImage, trackWindowScroll } from 'react-lazy-load-image-component';
+
 //import components 
 import Featured_projects_language from './Featured_projects_language';
 import View_All_Projects from '../components/View_All_Projects';
@@ -12,13 +14,14 @@ import youtube from '../icons/youtube.png';
 
 //style imports
 import '../styles/style.css';
+import { useLoaderData } from 'react-router-dom';
 
 const Featured_projects = (props) => {   
     if(props.feature == true){
         return (
             <div className="project-card">
                 <div className="left">
-                    <img src={props.image} alt={props.alt}/>
+                    <LazyLoadImage src={props.image} alt={props.alt} loading="lazy"/>
                 </div>
                 <div className="right">
                     <h1>{props.title}</h1>
