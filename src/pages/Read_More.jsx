@@ -14,6 +14,9 @@ export default function Read_More(props) {
       <div className="read-more-image">
         <img src={location.state.image} alt={location.state.alt}/>
       </div>
+      <div className="read-more-paragraph1">
+        <p>{location.state.paragraph1}</p>
+      </div>
     </section>
   )
 }
