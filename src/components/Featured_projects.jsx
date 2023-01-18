@@ -16,6 +16,9 @@ import youtube from '../icons/youtube.png';
 import '../styles/style.css';
 import { useLoaderData } from 'react-router-dom';
 
+//import react router from 'react-router
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+
 const Featured_projects = (props) => {   
     if(props.feature == true){
         return (
@@ -29,7 +32,7 @@ const Featured_projects = (props) => {
                     <Featured_projects_language language1={props.language1} language2={props.language2} language3={props.language3} language4={props.language4} language5={props.language5}/>
                     <p>{props.desc}</p>
                     <div className="info">
-                        <a href="src\pages\Read_more.jsx">Read more &#x27A4;</a>
+                    <Link to="../pages/Read_more" state={{title: props.title, image: props.image.src, alt: props.image.alt, paragraph1: props.paragraph1, paragraph2: props.paragraph2}} style={{ textDecoration: 'none' }}  >Read more &#x27a4;</Link>
                         <a href={props.githubRepo} target="_blank">
                             <img src={github}/>
                         </a>
