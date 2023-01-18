@@ -29,7 +29,7 @@ const Featured_projects = (props) => {
                     <Featured_projects_language language1={props.language1} language2={props.language2} language3={props.language3} language4={props.language4} language5={props.language5}/>
                     <p>{props.desc}</p>
                     <div className="info">
-                        <a>Read more &#x27A4;</a>
+                        <a href="src\pages\Read_more.jsx">Read more &#x27A4;</a>
                         <a href={props.githubRepo} target="_blank">
                             <img src={github}/>
                         </a>

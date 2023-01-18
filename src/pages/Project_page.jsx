@@ -16,6 +16,7 @@ function projects_page() {
     </section>
         
     <View_All_Projects/>
+
     </>
   )
 }

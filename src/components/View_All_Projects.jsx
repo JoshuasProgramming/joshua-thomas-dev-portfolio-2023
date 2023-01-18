@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 //import components 
 import Featured_projects_language from './Featured_projects_language';
+import Read_more_btn from './Read_more_btn';
 
 //import icons
 import github from '../icons/github.png';
@@ -13,7 +14,7 @@ import youtube from '../icons/youtube.png';
 import '../styles/style.css';
 
 //import pages 
-import Read_More from '../pages/Read_More';
+import Read_more from '../pages/Read_more';
 
 //image imports
 import Apple from '../images/apple Clone.png';
@@ -69,42 +70,40 @@ class View_All_Projects extends Component {
         return (
             projects.map((value, key) => (
                 <>
-                <div className="project-card" key={key}>
-                <div className="left">
-                    <img src={value.image.src} alt={value.image.alt} />
-                </div>
-                <div className="right">
-                    <h1>{value.title}</h1>
-                    <h4>{value.date}</h4>
-                    <Featured_projects_language language1={value.language1} language2={value.language2} language3={value.language3} language4={value.language4} language5={value.language5} />
-                    <p>{value.desc}</p>
-                    <div className="info">
-                        <Link to="/Read_More" style={{ textDecoration: 'none' }} >Read more &#x27a4;</Link>
-                        <a href={value.githubRepo} target="_blank">
-                            <img src={github} />
-                        </a>
+                    {/* <Router> */}
+                        <div className="project-card" key={key}>
+                        <div className="left">
+                            <img src={value.image.src} alt={value.image.alt} />
+                        </div>
+                        <div className="right">
+                            <h1>{value.title}</h1>
+                            <h4>{value.date}</h4>
+                            <Featured_projects_language language1={value.language1} language2={value.language2} language3={value.language3} language4={value.language4} language5={value.language5} />
+                            <p>{value.desc}</p>
+                            <div className="info">
+                                <Link to="../pages/Read_more" state={{title: value.title}} style={{ textDecoration: 'none' }}  >Read more &#x27a4;</Link>
+                                <a href={value.githubRepo} target="_blank">
+                                    <img src={github} />
+                                </a>
 
-                        <a href={value.openLink} target="_blank">
-                            <img src={openLink} />
-                        </a>
+                                <a href={value.openLink} target="_blank">
+                                    <img src={openLink} />
+                                </a>
 
-                        {value.youtubeVideo == true ?
+                                {value.youtubeVideo == true ?
 
-                            <a href={value.youtubeLink} target="_blank">
-                                <img src={youtube} />
-                            </a>
+                                    <a href={value.youtubeLink} target="_blank">
+                                        <img src={youtube} />
+                                    </a>
 
-                            :
+                                    :
 
-                            false}
+                                    false}
 
-                    </div>
-                </div>
-            </div>
-            <Routes>
-                <Route path='../pages/Read_More' element={<Read_More x={10} />} />
-            </Routes>
-            </>
+                                </div>
+                            </div>
+                        </div>
+                </>
             ))
         )
     }

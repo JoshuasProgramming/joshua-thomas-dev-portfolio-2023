@@ -1,16 +1,13 @@
 //import react
-import React from 'react'
+import React from 'react';
 
-//import react router from 'react-router
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom'
 
-//style imports
-import '../styles/style.css';
+export default function Read_More(props) {
+  const location = useLocation();
+  console.log(location);
 
-function Read_More(props) {
   return (
-    <><h1>Read_More {props.x}</h1><p>cdsjkcdsjcsdjcj</p></>
+    <h1>{location.state.title}</h1>
   )
 }
-
-export default Read_More

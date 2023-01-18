@@ -16,6 +16,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 //import pages
 import Project_page from './pages/Project_page';
 import Home from './pages/Home';
+import Read_more from './pages/Read_more';
 
 function App() {
   return (
@@ -57,7 +58,8 @@ function App() {
 
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path="pages/Project_page" element={ <Project_page/> }/>
+          <Route path="pages/Project_page/*" element={ <Project_page/> }/>
+          <Route path="pages/Read_more/" element={ <Read_more/> } />
         </Routes>
 
       </Router>
