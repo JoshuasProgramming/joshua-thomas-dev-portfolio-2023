@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function Read_More(props) {
   return (
-    <div>Read_More</div>
+    <h1>Read_More {props.x}</h1>
   )
 }
 

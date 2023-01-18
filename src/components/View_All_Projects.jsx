@@ -12,6 +12,9 @@ import youtube from '../icons/youtube.png';
 //style imports
 import '../styles/style.css';
 
+//import pages 
+import Read_More from '../pages/Read_More';
+
 //image imports
 import Apple from '../images/apple Clone.png';
 import Tappedesigns from '../images/tappedesigns.png';
@@ -35,7 +38,7 @@ import portfolio2022 from '../images/portfolio.JPG';
 import portfolio2023 from '../images/portfolio2023.png';
 
 //import react router from 'react-router
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 
 class View_All_Projects extends Component {
@@ -65,40 +68,43 @@ class View_All_Projects extends Component {
 
         return (
             projects.map((value, key) => (
+                <>
                 <div className="project-card" key={key}>
-                    <div className="left">
-                        <img src={value.image.src} alt={value.image.alt}/>
-                    </div>
-                    <div className="right">
-                        <h1>{value.title}</h1>
-                        <h4>{value.date}</h4>
-                        <Featured_projects_language language1={value.language1} language2={value.language2} language3={value.language3} language4={value.language4} language5={value.language5}/>
-                        <p>{value.desc}</p>
-                        <div className="info">
-                            <a>Read more &#x27A4;</a>
-                            <a href={value.githubRepo} target="_blank">
-                                <img src={github}/>
-                            </a>
-                            
-                            <a href={value.openLink} target="_blank">
-                                <img src={openLink}/>
-                            </a>
+                <div className="left">
+                    <img src={value.image.src} alt={value.image.alt} />
+                </div>
+                <div className="right">
+                    <h1>{value.title}</h1>
+                    <h4>{value.date}</h4>
+                    <Featured_projects_language language1={value.language1} language2={value.language2} language3={value.language3} language4={value.language4} language5={value.language5} />
+                    <p>{value.desc}</p>
+                    <div className="info">
+                        <Link to="/Read_More" style={{ textDecoration: 'none' }} >Read more &#x27a4;</Link>
+                        <a href={value.githubRepo} target="_blank">
+                            <img src={github} />
+                        </a>
 
-                            {value.youtubeVideo == true ? 
+                        <a href={value.openLink} target="_blank">
+                            <img src={openLink} />
+                        </a>
+
+                        {value.youtubeVideo == true ?
 
                             <a href={value.youtubeLink} target="_blank">
-                                <img src={youtube}/>
+                                <img src={youtube} />
                             </a>
 
                             :
 
-                            false
+                            false}
 
-                            }
-
-                        </div>
                     </div>
                 </div>
+            </div>
+            <Routes>
+                <Route path='../pages/Read_More' element={<Read_More x={10} />} />
+            </Routes>
+            </>
             ))
         )
     }
