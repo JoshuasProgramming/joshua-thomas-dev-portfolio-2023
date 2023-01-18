@@ -35,6 +35,8 @@ import portfolio2022 from '../images/portfolio.JPG';
 import portfolio2023 from '../images/portfolio2023.png';
 
 
+
+
 class View_All_Projects extends Component {
     render(){
         const projects = [
