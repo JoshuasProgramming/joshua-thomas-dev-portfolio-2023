@@ -34,7 +34,8 @@ import NumberGuessingGame from '../images/number guessing game.JPG';
 import portfolio2022 from '../images/portfolio.JPG';
 import portfolio2023 from '../images/portfolio2023.png';
 
-
+//import react router from 'react-router
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 class View_All_Projects extends Component {
