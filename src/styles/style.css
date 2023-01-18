@@ -627,4 +627,41 @@ nav .navigation .right .night-light-mode-icon:hover {
   .testimonials p {
     font-size: 14px;
   }
+}
+.read-more-container {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.read-more-container .read-more-title {
+  padding-top: 110px;
+  text-align: center;
+}
+.read-more-container .read-more-title h1 {
+  list-style-type: none;
+  font-family: system-ui;
+  color: #ffffff;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+  font-weight: 100;
+  text-decoration: none;
+}
+.read-more-container .read-more-title h1 span {
+  color: #6565ca;
+  background: -webkit-linear-gradient(45deg, #6565ca, #4343f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.read-more-container .read-more-image {
+  padding-top: 25px;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.read-more-container .read-more-image img {
+  width: 447px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
