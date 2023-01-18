@@ -81,7 +81,7 @@ class View_All_Projects extends Component {
                             <Featured_projects_language language1={value.language1} language2={value.language2} language3={value.language3} language4={value.language4} language5={value.language5} />
                             <p>{value.desc}</p>
                             <div className="info">
-                                <Link to="../pages/Read_more" state={{title: value.title}} style={{ textDecoration: 'none' }}  >Read more &#x27a4;</Link>
+                                <Link to="../pages/Read_more" state={{title: value.title, image: value.image.src, alt: value.image.alt}} style={{ textDecoration: 'none' }}  >Read more &#x27a4;</Link>
                                 <a href={value.githubRepo} target="_blank">
                                     <img src={github} />
                                 </a>
