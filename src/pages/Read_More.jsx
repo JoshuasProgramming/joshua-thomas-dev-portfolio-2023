@@ -17,6 +17,10 @@ export default function Read_More(props) {
       <div className="read-more-paragraph1">
         <p>{location.state.paragraph1}</p>
       </div>
+      <div className="read-more-paragraph1">
+        <p>{location.state.paragraph2}</p>
+      </div>
+      
     </section>
   )
 }
