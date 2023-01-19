@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 
 // import Projects from '../components/Projects';
 // import Featured_projects from '../components/Featured_projects'
@@ -6,7 +7,12 @@ import React from 'react'
 // import Featured_projects_language from '../components/Featured_projects_language';
 import View_All_Projects from '../components/View_All_Projects';
 
-function projects_page() {
+function Projects_page() {
+
+  useEffect(() =>{
+    document.title = 'Joshua Thomas | Projects';
+  }, []);
+
   return (
     <>
     {/* <Projects/> */}
@@ -21,4 +27,4 @@ function projects_page() {
   )
 }
 
-export default projects_page
+export default Projects_page
