@@ -3,6 +3,10 @@ import React, { useEffect } from 'react';
 
 import { useLocation } from 'react-router-dom'
 
+//import icons
+import github from '../icons/github.png';
+import openLink from '../icons/openLink.png';
+
 export default function Read_More(props) {
   const location = useLocation();
   console.log(location)
