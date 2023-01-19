@@ -27,7 +27,8 @@ export default function Read_More(props) {
       </div>
       
       <div className="read-more-heading">
-        <h1>{location.state.heading1}</h1>
+        <h1>{location.state.heading1_text}</h1>
+        <p>{location.state.paragraph1_text}</p>
       </div>
 
       <div className="read-more-snippet">
