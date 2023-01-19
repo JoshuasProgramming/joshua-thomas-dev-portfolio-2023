@@ -11,6 +11,8 @@ export default function Read_More(props) {
     document.title = 'Joshua Thomas | ' + location.state.title;
   }, []);
 
+  window.scrollTo(0, 0);
+
   return (
     <section className="read-more-container">
       <div className="read-more-title">
