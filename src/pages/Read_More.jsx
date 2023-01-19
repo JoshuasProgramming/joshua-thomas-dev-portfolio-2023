@@ -1,11 +1,16 @@
 //import react
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { useLocation } from 'react-router-dom'
 
 export default function Read_More(props) {
   const location = useLocation();
   console.log(location)
+
+  useEffect(() =>{
+    document.title = 'Joshua Thomas | ' + location.state.title;
+  }, []);
+
   return (
     <section className="read-more-container">
       <div className="read-more-title">
