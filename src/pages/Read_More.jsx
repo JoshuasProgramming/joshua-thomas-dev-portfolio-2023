@@ -28,11 +28,11 @@ export default function Read_More() {
       </div>
       <div className="read-more-icons">
         <a href={location.state.githubRepo} target="_blank">
-            <img src={github}/>
+            <img src={github} title={location.state.title + "'s github repository"}/>
         </a>
                           
         <a href={location.state.openLink} target="_blank">
-            <img src={openLink}/>
+            <img src={openLink} title={location.state.title + "'s open link"}/>
         </a>
       </div>
       <div className="read-more-paragraph1">
