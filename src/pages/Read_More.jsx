@@ -1,6 +1,7 @@
 //import react
 import React, { useEffect } from 'react';
 
+//import uselocation => allows us to get props from different components
 import { useLocation } from 'react-router-dom'
 
 //import icons
