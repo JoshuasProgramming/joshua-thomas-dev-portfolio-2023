@@ -8,7 +8,7 @@ import { useLocation } from 'react-router-dom'
 import github from '../icons/github.png';
 import openLink from '../icons/openLink.png';
 
-export default function Read_More(props) {
+export default function Read_More() {
   const location = useLocation();
   console.log(location)
 
