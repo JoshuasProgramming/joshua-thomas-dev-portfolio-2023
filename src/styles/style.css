@@ -681,4 +681,16 @@ nav .navigation .right .night-light-mode-icon:hover {
   text-decoration: none;
   padding-top: 20px;
   text-align: inherit;
+}
+.read-more-container .read-more-snippet {
+  padding-top: 25px;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.read-more-container .read-more-snippet img {
+  height: auto;
+  width: 1173px;
+  border-radius: 7px;
 }/*# sourceMappingURL=style.css.map */

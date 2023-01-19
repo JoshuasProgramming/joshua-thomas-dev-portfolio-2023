@@ -20,7 +20,10 @@ export default function Read_More(props) {
       <div className="read-more-paragraph1">
         <p>{location.state.paragraph2}</p>
       </div>
-      
+      <div className="read-more-snippet">
+        <img src={location.state.code_snippet1} alt={location.state.code_snippet1 + "IMG"}/>
+      </div>
+
     </section>
   )
 }

@@ -821,4 +821,15 @@ nav{
             text-align: inherit;
         }
     }
+
+    .read-more-snippet{
+        padding-top: 25px;
+        margin: auto;
+        width: fit-content;
+        img{
+            height: auto;
+            width: 1173px;
+            border-radius: 7px;
+        }
+    }
 }
