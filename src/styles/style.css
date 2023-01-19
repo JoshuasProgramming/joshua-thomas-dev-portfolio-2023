@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #01172c, #010f1c);
+  background: linear-gradient(#01172c, #010f1c);
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;

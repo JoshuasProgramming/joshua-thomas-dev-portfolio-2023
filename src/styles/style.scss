@@ -19,7 +19,7 @@ $span-color: #fffbfbef;
 
 body{
     // background: $primary-background;
-    background: linear-gradient(to right, $primary-background, #010f1c);
+    background: linear-gradient($primary-background, #010f1c);
     height: max-content;
 }
 
