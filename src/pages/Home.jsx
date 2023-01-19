@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Projects from '../components/Projects';
 import Hero from '../components/Hero';
 import Languages from '../components/Languages';
@@ -9,6 +9,11 @@ import Contact_section from '../components/contact_section';
 import Testimonials from '../components/testimonial';
 
 function Home() {
+
+  useEffect(() =>{
+    document.title = 'Joshua Thomas | Home';
+  }, []);
+
   return (  
     <> 
       <Hero />
