@@ -35,6 +35,10 @@ export default function Read_More(props) {
         <img src={location.state.code_snippet1} alt={location.state.code_snippet1 + "IMG"}/>
       </div>
 
+      <div className="read-more-snippet">
+        <img src={location.state.code_snippet2} alt={location.state.code_snippet2 + "IMG"}/>
+      </div>
+
     </section>
   )
 }
