@@ -667,8 +667,8 @@ nav .navigation .right .night-light-mode-icon:hover {
   border-radius: 7px;
 }
 .read-more-container .read-more-paragraph1 {
-  padding-left: 250px;
-  padding-right: 250px;
+  width: 972px;
+  margin: auto;
 }
 .read-more-container .read-more-paragraph1 p {
   list-style-type: none;
@@ -691,6 +691,6 @@ nav .navigation .right .night-light-mode-icon:hover {
 }
 .read-more-container .read-more-snippet img {
   height: auto;
-  width: 1173px;
+  width: 972px;
   border-radius: 7px;
 }/*# sourceMappingURL=style.css.map */
