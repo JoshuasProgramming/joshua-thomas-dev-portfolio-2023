@@ -102,7 +102,7 @@ class View_All_Projects extends Component {
                                     {title: value.title, image: value.image.src, alt: value.image.alt, code_snippet1: value.code_snippet1, 
                                     paragraph1: value.paragraph1, paragraph2: value.paragraph2, heading1_text: value.heading1_text, paragraph1_text: value.paragraph1_text, 
                                     code_snippet2: value.code_snippet2, heading2_text: value.heading2_text, paragraph2_text: value.paragraph2_text, 
-                                    githubRepo: value.githubRepo, openLink: value.openLink}} 
+                                    githubRepo: value.githubRepo, openLink: value.openLink, next: projects[key + 1], prev: projects[key - 1]}} 
                                     style={{ textDecoration: 'none' }}  >Read more &#x27a4;</Link>
 
                                 <a href={value.githubRepo} target="_blank">
@@ -124,6 +124,7 @@ class View_All_Projects extends Component {
                                     false}
 
                                 </div>
+
                             </div>
                         </div>
                 </>

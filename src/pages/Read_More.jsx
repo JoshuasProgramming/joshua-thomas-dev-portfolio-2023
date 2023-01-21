@@ -8,6 +8,9 @@ import { useLocation } from 'react-router-dom'
 import github from '../icons/github.png';
 import openLink from '../icons/openLink.png';
 
+//import react router from 'react-router
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+
 export default function Read_More() {
   const location = useLocation();
   console.log(location)
@@ -63,6 +66,16 @@ export default function Read_More() {
           <img src={location.state.code_snippet2} alt={location.state.code_snippet2 + "IMG"}/>
         </div>
       }
+
+        <div>
+          <Link to="../pages/Read_more" state={location.state.prev}
+          style={{ textDecoration: 'none' }}  >Prev</Link>
+        </div>
+
+        <div>
+          <Link to="../pages/Read_more" state={location.state.next} 
+          style={{ textDecoration: 'none' }}  >next</Link>
+        </div>
 
     </section>
   )
