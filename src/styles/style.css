@@ -9,6 +9,7 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  background-attachment: fixed;
 }
 
 .project-banner img {
