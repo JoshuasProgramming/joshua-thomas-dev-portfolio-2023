@@ -27,6 +27,13 @@ export default function Read_More() {
       <div className="read-more-title">
         <h1><span>{location.state.title}</span> - An Overview</h1>
       </div>
+      <div className="read-more-language-container"> 
+        {location.state.language1 != undefined ?  <div><h3>{location.state.language1}</h3></div> : false}
+        {location.state.language2 != undefined ?  <div><h3>{location.state.language2}</h3></div> : false}
+        {location.state.language3 != undefined ?  <div><h3>{location.state.language3}</h3></div> : false}
+        {location.state.language4 != undefined ?  <div><h3>{location.state.language4}</h3></div> : false}
+        {location.state.language5 != undefined ?  <div><h3>{location.state.language5}</h3></div> : false}
+      </div>
       <div className="read-more-image">
         <img src={location.state.image} alt={location.state.alt}/>
       </div>
