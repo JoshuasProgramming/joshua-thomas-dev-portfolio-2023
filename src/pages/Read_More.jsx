@@ -89,17 +89,28 @@ export default function Read_More() {
     ]
   
 
+  // let nextProject = null;
+  // let prevProject = null;
+
+  // for(let i = 0; i < projects.length; i++){
+  //   if(projects[i].title == location.state.title){
+  //     console.log("worked")
+
+  //     nextProject = projects[i + 1];
+  //     prevProject = projects[i -1];
+
+  //   }
+  // }
+
   let nextProject = null;
   let prevProject = null;
 
-  for(let i = 0; i < projects.length; i++){
-    if(projects[i].title == location.state.title){
-      console.log("worked")
+  const index = projects.findIndex(project => project.title === location.state.title);
 
-      nextProject = projects[i + 1];
-      prevProject = projects[i -1];
-
-    }
+  if (index !== -1) {
+      console.log("worked");
+      nextProject = projects[index + 1];
+      prevProject = projects[index - 1];
   }
 
   console.log(nextProject.title);
