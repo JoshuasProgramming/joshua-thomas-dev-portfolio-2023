@@ -119,7 +119,10 @@ export default function Read_More() {
         {location.state.language5 != undefined ?  <div><h3>{location.state.language5}</h3></div> : false}
       </div>
       <div className="read-more-image">
+        {
+        location.state.image == "[object Object]" ? <img src={location.state.image.src} alt={location.state.image.alt}></img> :
         <img src={location.state.image} alt={location.state.alt}/>
+        }
       </div>
       <div className="read-more-icons">
         <a href={location.state.githubRepo} target="_blank">
@@ -168,9 +171,6 @@ export default function Read_More() {
           <Link to="../pages/Read_more" state={nextProject} 
           style={{ textDecoration: 'none' }}  >next</Link>
         </div>
-
-        
-
     </section>
   )
 }
