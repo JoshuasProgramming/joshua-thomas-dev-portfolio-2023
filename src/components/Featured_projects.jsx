@@ -32,7 +32,12 @@ const Featured_projects = (props) => {
                     <Featured_projects_language language1={props.language1} language2={props.language2} language3={props.language3} language4={props.language4} language5={props.language5}/>
                     <p>{props.desc}</p>
                     <div className="info">
-                    <Link to="../pages/Read_more" state={{title: props.title, image: props.image, alt: props.image, paragraph1: props.paragraph1, paragraph2: props.paragraph2, githubRepo:props.githubRepo, openLink: props.openLink}} style={{ textDecoration: 'none' }}  >Read more &#x27a4;</Link>
+                    <Link to="../pages/Read_more" state={{title: props.title, image: props.image, alt: props.image, paragraph1: props.paragraph1, 
+                        paragraph2: props.paragraph2, githubRepo:props.githubRepo, openLink: props.openLink, language1:props.language1, language2:props.language2,
+                        language3:props.language3, language4:props.language4, language5:props.language5, code_snippet1:props.code_snippet1, 
+                        heading1_text: props.heading1_text, paragraph1_text: props.paragraph1_text, heading2_text: props.heading2_text, 
+                        paragraph2_text: props.paragraph2_text, code_snippet2: props.code_snippet2}} 
+                        style={{ textDecoration: 'none' }}  >Read more &#x27a4;</Link>
                         <a href={props.githubRepo} target="_blank">
                             <img src={github}/>
                         </a>

@@ -56,6 +56,7 @@ import moneyBox_snippet_1 from '../read_more_code_snippets/moneyBox_snippet_1.pn
 
 export default function Read_More() {
   const location = useLocation();
+  console.log(location);
 
   const projects = [
     {rank: 1,title: 'Apple Clone (React.js)', desc:'I created the fully responsive apple website (November 2022) from scratch . This website uses React.js, SASS & Responsive Design', image: {src: Apple, alt: 'AppleCloneImg'}, feature:false, featureAll:true, date:'In production', language1:'React', language2:'React Props', language3:'SCSS', Language4:'Responsive Design', language5:'HTML', openLink: 'https://apple-clone-reactjs.netlify.app/', githubRepo:'https://github.com/JoshuasProgramming/apple-clone',},
@@ -85,6 +86,7 @@ export default function Read_More() {
     /**
      * Code below will allow us to go to the next page and previous page 
      */
+
 
     let nextProject = null;
     let prevProject = null;
