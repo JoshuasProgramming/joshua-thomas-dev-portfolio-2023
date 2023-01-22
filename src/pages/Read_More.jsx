@@ -58,13 +58,6 @@ export default function Read_More() {
   const location = useLocation();
   console.log(location);
 
-  useEffect(() =>{
-    document.title = 'Joshua Thomas | ' + location.state.title;
-  }, []);
-
-  window.scrollTo(0, 0);
-
-  
   const projects = [
     {rank: 1,title: 'Apple Clone (React.js)', desc:'I created the fully responsive apple website (November 2022) from scratch . This website uses React.js, SASS & Responsive Design', image: {src: Apple, alt: 'AppleCloneImg'}, feature:false, featureAll:true, date:'In production', language1:'React', language2:'React Props', language3:'SCSS', Language4:'Responsive Design', language5:'HTML', openLink: 'https://apple-clone-reactjs.netlify.app/', githubRepo:'https://github.com/JoshuasProgramming/apple-clone',},
     {rank: 2,title: 'tappedesigns portfolio', desc:'I created a fully responsive portfolio website for one of my friends. This website uses HTML, SASS, CSS, JavaScript & Responsive Design',image: {src: Tappedesigns, alt: 'TappedesignsImg'}, feature:false, featureAll:true, language1:'HTML', language2:'SCSS', language3:'Responsive Design', language4:'Freelance Work', language5:'JavaScript', date:'December 30th 2022', openLink:'https://joshuasprogramming.github.io/tappedesigns_portfolio', githubRepo:'https://github.com/joshuasprogramming/tappedesigns_portfolio', paragraph1: "I developed a portfolio website for a client who was looking to display their exceptional Photoshop designs in a visually appealing and professional manner. The website was designed to be clean, user-friendly, and easy to navigate, with each design being presented in a high-resolution and interactive format, allowing visitors to fully appreciate the skill and talent of the client.", paragraph2:"The website was built using modern web development technologies such as HTML, CSS, JavaScript and responsive design to ensure that the website looks and functions optimally across all devices, providing the best possible user experience. I was able to bring the client's vision to life and deliver a website that exceeded their expectations and has helped them to attract more clients.", code_snippet1: tappedesigns_snippet_1, code_snippet2: tappedesigns_snippet_2, heading1_text: "1. Bringing a Client's Vision to Life: The Importance of Staying True to the Design and Feel of a Website Using HTML, SCSS, and Responsive Design", paragraph1_text: "As a web developer, it is crucial to understand the importance of staying true to a client's vision for their website, utilizing the power of HTML, SCSS, and responsive design to ensure that the final product not only meets but exceeds their expectations, while keeping the design and feel of the website intact throughout the development process. My client requested that I draw inspiration from the image provided below.", heading2_text: "2. Creating a Dynamic Hamburger Menu Using JavaScript", paragraph2_text: "In this code snippet, I used JavaScript to create a dynamic hamburger menu by grabbing the hamburger icon and menu elements, setting a boolean variable to check if the user has clicked on the hamburger icon, and using event listeners to toggle the menu open or closed based on the value of the boolean variable. The code also includes two functions, one for opening the menu and one for closing the menu, that change the display property of the menu element to either 'flex' or 'none' respectively."},
@@ -85,37 +78,29 @@ export default function Read_More() {
     {rank: 17,title: 'Weight Converter', desc:'Front End website for a weight converter. Website uses HTML, SASS, JavaScript & Responsive Design', image: {src: WeightConverter, alt: 'WeightConverterIMG'}, feature:false, featureAll:true, date:'February 12th 2022',openLink:'https://joshuasprogramming.github.io/Weight-Converter-Responsive/', githubRepo:'https://github.com/JoshuasProgramming/Weight-Converter-Responsive',language1: 'HTML', language2:'SCSS', language3:'JavaScript', language4: 'Responsive Design', code_snippet1: weight_converter_snippet_1, code_snippet2: weight_converter_snippet_2, heading1_text:"1. Converting Pounds to Other Units of Weight using JavaScript", paragraph1_text: "In this code snippet, I used JavaScript to create a function that converts pounds to other units of weight such as kilograms, grams, and ounces. The function takes in a value from an input field, and then uses that value to perform mathematical calculations to convert it to the other units. The function first converts pounds to kilograms by multiplyingthe pounds value by 0.45359237, and then assigns the result to a variable.", heading2_text: "2. Converting Kilograms to Other Units of Weight using JavaScript", paragraph2_text: "A JavaScript function that converts kilograms to pounds, grams, and ounces, displays results with 4 decimal precision and ensures accurate final result.", paragraph1: "In this project, I created a weight converter using a combination of HTML, SCSS, and JavaScript. I used HTML to structure the layout of the website and create the form for user input. I used SCSS for styling the website to make it visually pleasing and easy to use. Finally, I used JavaScript to create the logic for converting weight units and displaying the results to the user. ", paragraph2: "The JavaScript function takes user input from an input field, performs mathematical calculations to convert kilograms to pounds, grams and ounces, and displays the results in assigned containers with 4 decimal precision ensuring accurate final results. The project was designed to provide an easy to use, visually pleasing interface for users to quickly convert weight units."},
     {rank: 18,title: 'Number Guessing Game', desc:'Front End website for a number guessing game. Website uses HTML, SASS, JavaScript & Responsive Design', image: {src: NumberGuessingGame, alt: 'NumberGuessingGameIMG'}, feature:false, featureAll:true, date:'February 12th 2022', openLink:'https://joshuasprogramming.github.io/Number-Guessing-Game-Responsive/', githubRepo:'https://github.com/JoshuasProgramming/Number-Guessing-Game-Responsive',language1: 'HTML', language2:'SCSS', language3:'JavaScript', language4: 'Responsive Design', code_snippet1: numberGuessing_snippet_1, code_snippet2: numberGuessing_snippet_2, paragraph1:'Front End website which contains a random number guessing game. Website uses HTML, SASS, JavaScript & Responsive Design. I developed and designed the application as a means to understand DOM manipulation, conditions and the Math.floor function', paragraph2:"The process of implementing the random number javascript code, combined with HTML and SCSS was rewarding. Here's a few lessons I learned: ", heading1_text:"1. Utilizing the Math.floor() function for random number generation", paragraph1_text: "The math.floor() function accepts a real number (such as a number between 0 and 99) as input and returns the largest integer that is less than or equal to that number. Then, we set up a counter to keep track of the number of attempts made by the user and an array to store all the numbers the user has previously searched. Additionally, we prompt the user for their name and store it in a variable for later use. The 'prompt' function is utilized for this purpose."},
     {rank: 19,title: 'Personal portfolio 2022', desc:'Front End website which contains my portfolio. Website uses HTML, CSS & Responsive Design', image: {src: portfolio2022, alt: 'Portfolio2022IMG'}, feature:false, featureAll:true, date:'july 18th 2022', openLink:'https://joshuasprogramming.github.io/Joshua-Thomas-Dev-Portfolio/', githubRepo:'https://github.com/JoshuasProgramming/Joshua-Thomas-Dev-Portfolio',language1: 'HTML', language2:'SCSS', language3:'JavaScript', language4: 'Responsive Design'},
+    {rank: 20,title: 'Personal portfolio 2023', desc:'Front End website for 2023', image:{src: portfolio2023, alt: 'Portfolio2023IMG'}, feature:false, featureAll:true, feature:false, featureAll:true, githubRepo:'https://github.com/JoshuasProgramming/joshua-thomas-dev-portfolio-2023', language1: 'React', language2:'React Props', language3:'React Router', language4:'SCSS', language5: 'Responsive Design'},
     {rank: 20,title: 'Personal portfolio 2023', desc:'Front End website for 2023', image:{src: portfolio2023, alt: 'Portfolio2023IMG'}, feature:false, featureAll:true, feature:false, featureAll:true, githubRepo:'https://github.com/JoshuasProgramming/joshua-thomas-dev-portfolio-2023', language1: 'React', language2:'React Props', language3:'React Router', language4:'SCSS', language5: 'Responsive Design'}
     ]
-  
 
-  // let nextProject = null;
-  // let prevProject = null;
+    let nextProject = null;
+    let prevProject = null;
+    let maxItemsInProjects = null;
+    let minItemsInProjects = null;
 
-  // for(let i = 0; i < projects.length; i++){
-  //   if(projects[i].title == location.state.title){
-  //     console.log("worked")
+    const index = projects.findIndex(project => project.title === location.state.title);
 
-  //     nextProject = projects[i + 1];
-  //     prevProject = projects[i -1];
+    if (index !== -1) {
+        console.log("worked", index);
+        nextProject = projects[index + 1];
+        prevProject = projects[index - 1];
+        maxItemsInProjects = projects.length;
+        minItemsInProjects = 0;
+    }
 
-  //   }
-  // }
+    document.title = 'Joshua Thomas | ' + location.state.title;
 
-  let nextProject = null;
-  let prevProject = null;
+    window.scrollTo(0, 0);
 
-  const index = projects.findIndex(project => project.title === location.state.title);
-
-  if (index !== -1) {
-      console.log("worked");
-      nextProject = projects[index + 1];
-      prevProject = projects[index - 1];
-  }
-
-  console.log(nextProject.title);
-  console.log(nextProject);
-  console.log(prevProject); 
 
   return (
     <section className="read-more-container">
@@ -136,6 +121,21 @@ export default function Read_More() {
         }
       </div>
       <div className="read-more-icons">
+
+        { 
+        index==minItemsInProjects ? false 
+        : 
+
+        <Link to="../pages/Read_more" state={prevProject}
+        style={{ textDecoration: 'none' }}  >
+          <div className='next-prev-btn'>
+            Prev
+          </div>
+         </Link>
+
+        }
+        
+
         <a href={location.state.githubRepo} target="_blank">
             <img src={github} title={location.state.title + "'s github repository"}/>
         </a>
@@ -143,6 +143,20 @@ export default function Read_More() {
         <a href={location.state.openLink} target="_blank">
             <img src={openLink} title={location.state.title + "'s open link"}/>
         </a>
+
+        { 
+        (index + 2)==maxItemsInProjects ? false 
+        : 
+
+        <Link to="../pages/Read_more" state={nextProject}
+        style={{ textDecoration: 'none' }}  >
+          <div className='next-prev-btn'>
+            Next
+          </div>
+         </Link>
+        
+        }
+
       </div>
       <div className="read-more-paragraph1">
         <p>{location.state.paragraph1}</p>
@@ -173,7 +187,7 @@ export default function Read_More() {
         </div>
       }
 
-        <div>
+        {/* <div>
           <Link to="../pages/Read_more" state={prevProject}
           style={{ textDecoration: 'none' }}  >prev</Link>
         </div>
@@ -181,7 +195,7 @@ export default function Read_More() {
         <div>
           <Link to="../pages/Read_more" state={nextProject} 
           style={{ textDecoration: 'none' }}  >next</Link>
-        </div>
+        </div> */}
     </section>
   )
 }
