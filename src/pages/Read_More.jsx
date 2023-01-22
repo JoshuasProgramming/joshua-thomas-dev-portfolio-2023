@@ -21,6 +21,7 @@ export default function Read_More() {
 
   window.scrollTo(0, 0);
 
+
   return (
     <section className="read-more-container">
       <div className="read-more-title">
