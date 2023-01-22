@@ -126,7 +126,7 @@ export default function Read_More() {
 
         <Link to="../pages/Read_more" state={prevProject}
         style={{ textDecoration: 'none' }}  >
-          <div className='next-prev-btn'>
+          <div className='next-prev-btn' title={prevProject.title}>
             Prev
           </div>
          </Link>
@@ -148,7 +148,7 @@ export default function Read_More() {
 
         <Link to="../pages/Read_more" state={nextProject}
         style={{ textDecoration: 'none' }}  >
-          <div className='next-prev-btn'>
+          <div className='next-prev-btn' title={nextProject.title}>
             Next
           </div>
          </Link>
