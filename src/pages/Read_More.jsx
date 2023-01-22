@@ -56,7 +56,7 @@ import moneyBox_snippet_1 from '../read_more_code_snippets/moneyBox_snippet_1.pn
 
 export default function Read_More() {
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
 
   const projects = [
     {rank: 1,title: 'Apple Clone (React.js)', desc:'I created the fully responsive apple website (November 2022) from scratch . This website uses React.js, SASS & Responsive Design', image: {src: Apple, alt: 'AppleCloneImg'}, feature:false, featureAll:true, date:'In production', language1:'React', language2:'React Props', language3:'SCSS', Language4:'Responsive Design', language5:'HTML', openLink: 'https://apple-clone-reactjs.netlify.app/', githubRepo:'https://github.com/JoshuasProgramming/apple-clone',},
@@ -136,12 +136,11 @@ export default function Read_More() {
         <Link to="../pages/Read_more" state={prevProject}
         style={{ textDecoration: 'none' }}  >
           <div className='next-prev-btn' title={prevProject.title}>
-            Prev
+          &#171; Prev
           </div>
          </Link>
 
         }
-        
 
         <a href={location.state.githubRepo} target="_blank">
             <img src={github} title={location.state.title + "'s github repository"}/>
@@ -158,13 +157,14 @@ export default function Read_More() {
         <Link to="../pages/Read_more" state={nextProject}
         style={{ textDecoration: 'none' }}  >
           <div className='next-prev-btn' title={nextProject.title}>
-            Next
+            Next &#187;
           </div>
          </Link>
         
         }
 
       </div>
+
       <div className="read-more-paragraph1">
         <p>{location.state.paragraph1}</p>
       </div>
