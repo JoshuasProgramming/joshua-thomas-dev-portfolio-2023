@@ -982,9 +982,27 @@ nav{
 
 //read-more tablet viewpoint
 @media screen and (max-width: 1335px) {
+    
 }
 
 //read-more mobile viewpoint
 @media screen and (max-width:600px){
-    
+    .read-more-container{
+        .read-more-image{
+            img{
+                width: 700px;
+            }
+        }
+        .read-more-paragraph1{
+            width: 500px;
+        }
+        .read-more-heading {
+            width: 500px;
+        }
+        .read-more-snippet {
+           img{
+            width: 500px;
+           }
+        }
+    }
 }
