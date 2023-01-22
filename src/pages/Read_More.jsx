@@ -86,8 +86,7 @@ export default function Read_More() {
     /**
      * Code below will allow us to go to the next page and previous page 
      */
-
-
+    
     let nextProject = null;
     let prevProject = null;
     let maxItemsInProjects = null;
