@@ -13,9 +13,6 @@ import youtube from '../icons/youtube.png';
 //style imports
 import '../styles/style.css';
 
-//import pages 
-import Read_more from '../pages/Read_more';
-
 //image imports
 import Apple from '../images/apple Clone.png';
 import Tappedesigns from '../images/tappedesigns.png';

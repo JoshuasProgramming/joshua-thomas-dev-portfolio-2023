@@ -285,6 +285,19 @@ nav{
         width: 600px;
     }
 
+    .purple-text{
+        color: #6565ca;
+        background: -webkit-linear-gradient(45deg, #6565ca, #4343f4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        text-align: center;
+        font-size: 38px;
+        font-family: $primary-font;
+        color: $primary-color;
+        text-align: center;
+    }
+
     .cv-container{
         background: $primary-color;
         border-radius: 10px;

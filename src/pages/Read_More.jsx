@@ -56,7 +56,6 @@ import moneyBox_snippet_1 from '../read_more_code_snippets/moneyBox_snippet_1.pn
 
 export default function Read_More() {
   const location = useLocation();
-  console.log(location);
 
   const projects = [
     {rank: 1,title: 'Apple Clone (React.js)', desc:'I created the fully responsive apple website (November 2022) from scratch . This website uses React.js, SASS & Responsive Design', image: {src: Apple, alt: 'AppleCloneImg'}, feature:false, featureAll:true, date:'In production', language1:'React', language2:'React Props', language3:'SCSS', Language4:'Responsive Design', language5:'HTML', openLink: 'https://apple-clone-reactjs.netlify.app/', githubRepo:'https://github.com/JoshuasProgramming/apple-clone',},
@@ -90,7 +89,6 @@ export default function Read_More() {
     const index = projects.findIndex(project => project.title === location.state.title);
 
     if (index !== -1) {
-        console.log("worked", index);
         nextProject = projects[index + 1];
         prevProject = projects[index - 1];
         maxItemsInProjects = projects.length;
@@ -186,16 +184,6 @@ export default function Read_More() {
           <img src={location.state.code_snippet2} alt={location.state.code_snippet2 + "IMG"}/>
         </div>
       }
-
-        {/* <div>
-          <Link to="../pages/Read_more" state={prevProject}
-          style={{ textDecoration: 'none' }}  >prev</Link>
-        </div>
-
-        <div>
-          <Link to="../pages/Read_more" state={nextProject} 
-          style={{ textDecoration: 'none' }}  >next</Link>
-        </div> */}
     </section>
   )
 }
