@@ -81,6 +81,11 @@ export default function Read_More() {
     {rank: 20,title: 'Personal portfolio 2023', desc:'Front End website for 2023', image:{src: portfolio2023, alt: 'Portfolio2023IMG'}, feature:false, featureAll:true, feature:false, featureAll:true, githubRepo:'https://github.com/JoshuasProgramming/joshua-thomas-dev-portfolio-2023', language1: 'React', language2:'React Props', language3:'React Router', language4:'SCSS', language5: 'Responsive Design'}
     ]
 
+
+    /**
+     * Code below will allow us to go to the next page and previous page 
+     */
+
     let nextProject = null;
     let prevProject = null;
     let maxItemsInProjects = null;
