@@ -97,6 +97,7 @@ export default function Read_More() {
 
     document.title = 'Joshua Thomas | ' + location.state.title;
 
+    //page will start at top
     window.scrollTo(0, 0);
 
 
