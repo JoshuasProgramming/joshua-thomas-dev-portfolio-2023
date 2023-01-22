@@ -102,6 +102,7 @@ export default function Read_More() {
         minItemsInProjects = 0;
     }
 
+    //displaying the title of the web page
     document.title = 'Joshua Thomas | ' + location.state.title;
 
     //page will start at top
