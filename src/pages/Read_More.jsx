@@ -183,11 +183,12 @@ export default function Read_More() {
         </div>
 
       }
-
-      <div className="read-more-heading">
-        <h1>{location.state.heading2_text}</h1>
-        <p>{location.state.paragraph2_text}</p>
-      </div>
+      {(location.state.heading2_text && location.state.paragraph2_text) ==  null ? false : 
+        <div className="read-more-heading">
+          <h1>{location.state.heading2_text}</h1>
+          <p>{location.state.paragraph2_text}</p>
+        </div>
+      }
 
       { location.state.code_snippet2 === undefined ? 
         false 
