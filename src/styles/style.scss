@@ -937,6 +937,48 @@ nav{
         cursor: pointer;
         color: #fff;
     }
+
+    .read-more-pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding-bottom: 40px;
+        width: fit-content;
+        margin: auto;
+
+        .pagination-btn{
+            background: #fff;
+            width: 0.1px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            transition: .5s ease-in-out;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-right: 10px;
+            justify-content: center;
+            border-radius: 50px;
+        }
+
+        .pagination-btn-active{
+            background: #4343f4;
+            width: 0.1px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            transition: .5s ease-in-out;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-right: 10px;
+            justify-content: center;
+            border-radius: 50px;
+        }
+    }
 }
 
 //////////////////////////////read-more-language-container///////////////////////////////////

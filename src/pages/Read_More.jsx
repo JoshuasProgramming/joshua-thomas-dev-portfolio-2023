@@ -153,7 +153,6 @@ export default function Read_More() {
           &#171; Prev
           </div>
          </Link>
-
         }
 
         <a href={location.state.githubRepo} target="_blank">
@@ -174,7 +173,6 @@ export default function Read_More() {
             Next &#187;
           </div>
          </Link>
-        
         }
 
       </div>
@@ -212,7 +210,8 @@ export default function Read_More() {
         </div>
       }
 
-        <div className="read-more-pagination">
+
+      <div className="read-more-pagination">
         {
           projects.map((item, index) => (
           // <div key={index}>{item.rank}</div>
@@ -221,8 +220,7 @@ export default function Read_More() {
               
                 {
                   currentProject.title !== item.title ? 
-                  <div className='next-prev-btn' title={item.title}>
-                    {item.rank}
+                  <div className='pagination-btn' title={item.title}>
       
                     {/* currentProject.title == item.title ?  */}
                     
@@ -231,8 +229,8 @@ export default function Read_More() {
                     item.rank */}
                   </div>
                   :
-                  <div className='next-prev-btn' style={{ background: 'purple' }} title={item.title}>
-                    {item.rank}
+                  <div className='pagination-btn-active' style={{ background: 'purple' }} title={item.title}>
+                   
                   </div>
                 }
               
