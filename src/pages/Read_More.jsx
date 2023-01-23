@@ -115,9 +115,6 @@ export default function Read_More() {
     //page will start at top
     window.scrollTo(0, 0);
 
-    console.log(currentProject)
-
-
   return (
     <section className="read-more-container">
       <div className="read-more-title">
