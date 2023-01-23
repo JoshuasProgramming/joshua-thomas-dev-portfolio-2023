@@ -121,11 +121,6 @@ export default function Read_More() {
   return (
     <section className="read-more-container">
       <div className="read-more-title">
-        {/* {
-          projects.map((value,key)=> {
-            <p key={key}>{key}</p>
-          })
-        } */}
         <h1><span>{location.state.title}</span> - An Overview</h1>
       </div>
       <div className="read-more-language-container"> 
