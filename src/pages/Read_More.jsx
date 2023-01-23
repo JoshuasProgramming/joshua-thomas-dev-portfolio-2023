@@ -221,7 +221,7 @@ export default function Read_More() {
               
                 {
                   currentProject.title !== item.title ? 
-                  <div className='next-prev-btn' title={prevProject.title}>
+                  <div className='next-prev-btn' title={item.title}>
                     {item.rank}
       
                     {/* currentProject.title == item.title ?  */}
@@ -231,7 +231,7 @@ export default function Read_More() {
                     item.rank */}
                   </div>
                   :
-                  <div className='next-prev-btn' style={{ background: 'purple' }} title={prevProject.title}>
+                  <div className='next-prev-btn' style={{ background: 'purple' }} title={item.title}>
                     {item.rank}
                   </div>
                 }
