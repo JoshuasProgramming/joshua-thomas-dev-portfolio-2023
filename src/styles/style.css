@@ -826,7 +826,45 @@ nav .navigation .right .night-light-mode-icon:hover {
   transition: 0.4s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1335px) {
+  .read-more-container .read-more-image img {
+    width: 600px;
+  }
+  .read-more-container .read-more-language-container h3 {
+    font-size: 15px;
+  }
+  .read-more-container .read-more-paragraph1 {
+    width: 832px;
+    padding-left: 6px;
+  }
+  .read-more-container .read-more-heading {
+    width: 832px;
+    padding-left: 6px;
+  }
+  .read-more-container .read-more-snippet img {
+    width: 670px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .read-more-container .read-more-image img {
+    width: 600px;
+  }
+  .read-more-container .read-more-language-container h3 {
+    font-size: 15px;
+  }
+  .read-more-container .read-more-paragraph1 {
+    width: 572px;
+    padding-left: 6px;
+  }
+  .read-more-container .read-more-heading {
+    width: 572px;
+    padding-left: 6px;
+  }
+  .read-more-container .read-more-snippet img {
+    width: 670px;
+  }
+}
+@media screen and (max-width: 500px) {
   .read-more-container .read-more-image img {
     width: 470px;
   }
