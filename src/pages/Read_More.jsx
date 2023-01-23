@@ -80,8 +80,13 @@ export default function Read_More() {
     {rank: 17,title: 'Weight Converter', desc:'Front End website for a weight converter. Website uses HTML, SASS, JavaScript & Responsive Design', image: {src: WeightConverter, alt: 'WeightConverterIMG'}, feature:false, featureAll:true, date:'February 12th 2022',openLink:'https://joshuasprogramming.github.io/Weight-Converter-Responsive/', githubRepo:'https://github.com/JoshuasProgramming/Weight-Converter-Responsive',language1: 'HTML', language2:'SCSS', language3:'JavaScript', language4: 'Responsive Design', code_snippet1: weight_converter_snippet_1, code_snippet2: weight_converter_snippet_2, heading1_text:"1. Converting Pounds to Other Units of Weight using JavaScript", paragraph1_text: "In this code snippet, I used JavaScript to create a function that converts pounds to other units of weight such as kilograms, grams, and ounces. The function takes in a value from an input field, and then uses that value to perform mathematical calculations to convert it to the other units. The function first converts pounds to kilograms by multiplyingthe pounds value by 0.45359237, and then assigns the result to a variable.", heading2_text: "2. Converting Kilograms to Other Units of Weight using JavaScript", paragraph2_text: "A JavaScript function that converts kilograms to pounds, grams, and ounces, displays results with 4 decimal precision and ensures accurate final result.", paragraph1: "In this project, I created a weight converter using a combination of HTML, SCSS, and JavaScript. I used HTML to structure the layout of the website and create the form for user input. I used SCSS for styling the website to make it visually pleasing and easy to use. Finally, I used JavaScript to create the logic for converting weight units and displaying the results to the user. ", paragraph2: "The JavaScript function takes user input from an input field, performs mathematical calculations to convert kilograms to pounds, grams and ounces, and displays the results in assigned containers with 4 decimal precision ensuring accurate final results. The project was designed to provide an easy to use, visually pleasing interface for users to quickly convert weight units."},
     {rank: 18,title: 'Number Guessing Game', desc:'Front End website for a number guessing game. Website uses HTML, SASS, JavaScript & Responsive Design', image: {src: NumberGuessingGame, alt: 'NumberGuessingGameIMG'}, feature:false, featureAll:true, date:'February 12th 2022', openLink:'https://joshuasprogramming.github.io/Number-Guessing-Game-Responsive/', githubRepo:'https://github.com/JoshuasProgramming/Number-Guessing-Game-Responsive',language1: 'HTML', language2:'SCSS', language3:'JavaScript', language4: 'Responsive Design', code_snippet1: numberGuessing_snippet_1, code_snippet2: numberGuessing_snippet_2, paragraph1:'Front End website which contains a random number guessing game. Website uses HTML, SASS, JavaScript & Responsive Design. I developed and designed the application as a means to understand DOM manipulation, conditions and the Math.floor function', paragraph2:"The process of implementing the random number javascript code, combined with HTML and SCSS was rewarding. Here's a few lessons I learned: ", heading1_text:"1. Utilizing the Math.floor() function for random number generation", paragraph1_text: "The math.floor() function accepts a real number (such as a number between 0 and 99) as input and returns the largest integer that is less than or equal to that number. Then, we set up a counter to keep track of the number of attempts made by the user and an array to store all the numbers the user has previously searched. Additionally, we prompt the user for their name and store it in a variable for later use. The 'prompt' function is utilized for this purpose."},
     {rank: 19,title: 'Personal portfolio 2022', desc:'Front End website which contains my portfolio. Website uses HTML, CSS & Responsive Design', image: {src: portfolio2022, alt: 'Portfolio2022IMG'}, feature:false, featureAll:true, date:'july 18th 2022', openLink:'https://joshuasprogramming.github.io/Joshua-Thomas-Dev-Portfolio/', githubRepo:'https://github.com/JoshuasProgramming/Joshua-Thomas-Dev-Portfolio',language1: 'HTML', language2:'SCSS', language3:'JavaScript', language4: 'Responsive Design'},
-    {rank: 20,title: 'Personal portfolio 2023', desc:'Front End website for 2023', image:{src: portfolio2023, alt: 'Portfolio2023IMG'}, feature:false, featureAll:true, feature:false, featureAll:true, githubRepo:'https://github.com/JoshuasProgramming/joshua-thomas-dev-portfolio-2023', language1: 'React', language2:'React Props', language3:'React Router', language4:'SCSS', language5: 'Responsive Design'}
+    {rank: 20,title: 'Personal portfolio 2023', desc:'Front End website for 2023', image:{src: portfolio2023, alt: 'Portfolio2023IMG'}, feature:false, featureAll:true, feature:false, featureAll:true, githubRepo:'https://github.com/JoshuasProgramming/joshua-thomas-dev-portfolio-2023', language1: 'React', language2:'React Props', language3:'React Router', language4:'SCSS', language5: 'Responsive Design'},
+    {rank: 20,title: 'null', desc:'Front End website for 2023', image:{src: portfolio2023, alt: 'Portfolio2023IMG'}, feature:false, featureAll:true, feature:false, featureAll:true, githubRepo:'https://github.com/JoshuasProgramming/joshua-thomas-dev-portfolio-2023', language1: 'React', language2:'React Props', language3:'React Router', language4:'SCSS', language5: 'Responsive Design'},
     ]
+
+    // projects.map((value,key)=> {
+    //   console.log(value);
+    // })
 
 
     /**
@@ -92,12 +97,14 @@ export default function Read_More() {
     let prevProject = null;
     let maxItemsInProjects = null;
     let minItemsInProjects = null;
+    let currentProject = null;
 
-    const index = projects.findIndex(project => project.title === location.state.title);
+    let index = projects.findIndex(project => project.title === location.state.title);
 
     if (index !== -1) {
         nextProject = projects[index + 1];
         prevProject = projects[index - 1];
+        currentProject = projects[index];
         maxItemsInProjects = projects.length;
         minItemsInProjects = 0;
     }
@@ -108,10 +115,17 @@ export default function Read_More() {
     //page will start at top
     window.scrollTo(0, 0);
 
+    console.log(currentProject)
+
 
   return (
     <section className="read-more-container">
       <div className="read-more-title">
+        {/* {
+          projects.map((value,key)=> {
+            <p key={key}>{key}</p>
+          })
+        } */}
         <h1><span>{location.state.title}</span> - An Overview</h1>
       </div>
       <div className="read-more-language-container"> 
@@ -197,6 +211,38 @@ export default function Read_More() {
           <img src={location.state.code_snippet2} alt={location.state.code_snippet2 + "IMG"}/>
         </div>
       }
+
+        <div className="read-more-pagination">
+        {
+          projects.map((item, index) => (
+          // <div key={index}>{item.rank}</div>
+          item.title !== "null" ? 
+            <Link to="../pages/Read_more" state={item} style={{ textDecoration: 'none' }} key={index} >
+              
+                {
+                  currentProject.title !== item.title ? 
+                  <div className='next-prev-btn' title={prevProject.title}>
+                    {item.rank}
+      
+                    {/* currentProject.title == item.title ?  */}
+                    
+                    {/* <h1 style={{background: 'purple'}}>{item.rank}</h1> :
+
+                    item.rank */}
+                  </div>
+                  :
+                  <div className='next-prev-btn' style={{ background: 'purple' }} title={prevProject.title}>
+                    {item.rank}
+                  </div>
+                }
+              
+          </Link>
+          :
+          false
+          ))
+        }
+        </div>
+
     </section>
   )
 }
