@@ -176,9 +176,12 @@ export default function Read_More() {
         <p>{location.state.paragraph1_text}</p>
       </div>
 
-      <div className="read-more-snippet">
-        <img src={location.state.code_snippet1} alt={location.state.code_snippet1 + "IMG"}/>
-      </div>
+      {location.state.code_snippet1 === undefined ? false :
+        <div className="read-more-snippet">
+          <img src={location.state.code_snippet1} alt={location.state.code_snippet1 + "IMG"}/>
+        </div>
+
+      }
 
       <div className="read-more-heading">
         <h1>{location.state.heading2_text}</h1>
