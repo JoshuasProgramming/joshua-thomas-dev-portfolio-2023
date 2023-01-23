@@ -206,7 +206,6 @@ export default function Read_More() {
       <div className="read-more-pagination">
         {
           projects.map((item, index) => (
-          // <div key={index}>{item.rank}</div>
           item.title !== "null" ? 
             <Link to="../pages/Read_more" state={item} style={{ textDecoration: 'none' }} key={index} >
               
@@ -214,11 +213,6 @@ export default function Read_More() {
                   currentProject.title !== item.title ? 
                   <div className='pagination-btn' title={item.title}>
                       {item.rank}
-                    {/* currentProject.title == item.title ?  */}
-                    
-                    {/* <h1 style={{background: 'purple'}}>{item.rank}</h1> :
-
-                    item.rank */}
                   </div>
                   :
                   <div className='pagination-btn-active' title={item.title}>
