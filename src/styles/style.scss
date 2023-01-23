@@ -943,14 +943,14 @@ nav{
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        padding-bottom: 40px;
+        padding-bottom: 80px;
         width: fit-content;
         margin: auto;
 
         .pagination-btn{
             background: #fff;
-            width: 0.1px;
-            height: 20px;
+            width: 15px;
+            height: 33px;
             display: flex;
             align-items: center;
             transition: .5s ease-in-out;
@@ -961,6 +961,13 @@ nav{
             margin-right: 10px;
             justify-content: center;
             border-radius: 50px;
+        }
+
+        .pagination-btn:hover{
+            background: #4343f4;
+            transition: .4s ease-in-out;
+            cursor: pointer;
+            color: #fff;
         }
 
         .pagination-btn-active{
@@ -977,6 +984,12 @@ nav{
             margin-right: 10px;
             justify-content: center;
             border-radius: 50px;
+        }
+    }
+    
+    @media screen and (max-width:928px){
+        .read-more-pagination{
+            display: none;
         }
     }
 }

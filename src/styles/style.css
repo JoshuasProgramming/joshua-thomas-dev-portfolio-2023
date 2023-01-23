@@ -789,7 +789,7 @@ nav .navigation .right .night-light-mode-icon:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -797,8 +797,8 @@ nav .navigation .right .night-light-mode-icon:hover {
 }
 .read-more-container .read-more-pagination .pagination-btn {
   background: #fff;
-  width: 0.1px;
-  height: 20px;
+  width: 15px;
+  height: 33px;
   display: flex;
   align-items: center;
   transition: 0.5s ease-in-out;
@@ -809,6 +809,12 @@ nav .navigation .right .night-light-mode-icon:hover {
   margin-right: 10px;
   justify-content: center;
   border-radius: 50px;
+}
+.read-more-container .read-more-pagination .pagination-btn:hover {
+  background: #4343f4;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  color: #fff;
 }
 .read-more-container .read-more-pagination .pagination-btn-active {
   background: #4343f4;
@@ -824,6 +830,11 @@ nav .navigation .right .night-light-mode-icon:hover {
   margin-right: 10px;
   justify-content: center;
   border-radius: 50px;
+}
+@media screen and (max-width: 928px) {
+  .read-more-container .read-more-pagination {
+    display: none;
+  }
 }
 
 .read-more-language-container {
