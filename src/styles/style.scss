@@ -961,6 +961,7 @@ nav{
             margin-right: 10px;
             justify-content: center;
             border-radius: 50px;
+            font-size: 13.5px;
         }
 
         .pagination-btn:hover{
@@ -984,9 +985,10 @@ nav{
             margin-right: 10px;
             justify-content: center;
             border-radius: 50px;
+            font-size: 13.5px;
         }
     }
-    
+
     @media screen and (max-width:928px){
         .read-more-pagination{
             display: none;
