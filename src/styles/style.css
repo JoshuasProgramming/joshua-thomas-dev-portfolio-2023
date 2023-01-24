@@ -936,4 +936,8 @@ nav .navigation .right .night-light-mode-icon:hover {
   .read-more-container .read-more-snippet img {
     width: 470px;
   }
+  .read-more-container .read-more-icons a img {
+    width: 25px;
+    height: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
