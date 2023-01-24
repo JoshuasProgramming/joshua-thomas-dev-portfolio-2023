@@ -55,10 +55,16 @@ import FoodDX_snippet_1 from '../read_more_code_snippets/FoodDX_snippet_1.png';
 import FoodDX_snippet_2 from '../read_more_code_snippets/FoodDX_snippet_2.png';
 
 
-
 export default function Read_More() {
   const location = useLocation();
   // console.log(location);
+
+  // fetch("https://api.github.com/repos/JoshuasProgramming/")
+  // .then(response => response.json())
+  // .then(data => {
+  //   console.log(data);
+  // })
+  // .catch(error => console.log(error));
 
   const projects = [
     {rank: 1,title: 'Apple Clone (React.js)', desc:'I created the fully responsive apple website (November 2022) from scratch . This website uses React.js, SASS & Responsive Design', image: {src: Apple, alt: 'AppleCloneImg'}, feature:false, featureAll:true, date:'In production', language1:'React', language2:'React Props', language3:'SCSS', Language4:'Responsive Design', language5:'HTML', openLink: 'https://apple-clone-reactjs.netlify.app/', githubRepo:'https://github.com/JoshuasProgramming/apple-clone',},
@@ -84,10 +90,13 @@ export default function Read_More() {
     {rank: 20,title: 'null', desc:'Front End website for 2023', image:{src: portfolio2023, alt: 'Portfolio2023IMG'}, feature:false, featureAll:true, feature:false, featureAll:true, githubRepo:'https://github.com/JoshuasProgramming/joshua-thomas-dev-portfolio-2023', language1: 'React', language2:'React Props', language3:'React Router', language4:'SCSS', language5: 'Responsive Design'},
     ]
 
-    // projects.map((value,key)=> {
-    //   console.log(value);
-    // })
+    // let profileName = "JoshuasProgramming"
 
+    // fetch(`https://api.github.com/users/${profileName}`)
+    //   .then(response => response.json())
+    //   .then(response => {
+    //       console.log (response);
+    // })
 
     /**
      * Code below will allow us to go to the next page and previous page 
