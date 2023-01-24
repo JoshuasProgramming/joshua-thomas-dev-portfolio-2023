@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom'
 //import icons
 import github from '../icons/github.png';
 import openLink from '../icons/openLink.png';
+import download from '../icons/download.png';
 
 //import react router from 'react-router
 import { useNavigate, BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
@@ -165,7 +166,9 @@ export default function Read_More() {
             <img src={github} title={location.state.title + "'s github repository"}/>
         </a>
 
-        <a href={downloadLink}></a>
+        <a href={downloadLink}>
+            <img src={download} title={location.state.title + "'s zip file"}/>
+        </a>
                           
         <a href={location.state.openLink} target="_blank">
             <img src={openLink} title={location.state.title + "'s open link"}/>
