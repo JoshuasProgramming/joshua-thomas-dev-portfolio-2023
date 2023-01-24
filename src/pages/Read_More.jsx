@@ -127,6 +127,8 @@ export default function Read_More() {
     //page will start at top
     window.scrollTo(0, 0);
 
+    let downloadLink = "https://github.com/JoshuasProgramming/" + location.state.title.replace(/\s+/g,"_") + "/archive/refs/heads/main.zip";
+
   return (
     <section className="read-more-container">
       <div className="read-more-title">
@@ -162,6 +164,8 @@ export default function Read_More() {
         <a href={location.state.githubRepo} target="_blank">
             <img src={github} title={location.state.title + "'s github repository"}/>
         </a>
+
+        <a href={downloadLink}></a>
                           
         <a href={location.state.openLink} target="_blank">
             <img src={openLink} title={location.state.title + "'s open link"}/>
