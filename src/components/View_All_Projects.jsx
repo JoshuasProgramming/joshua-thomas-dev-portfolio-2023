@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 //import components 
 import Featured_projects_language from './Featured_projects_language';
-import Read_more_btn from './Read_more_btn';
 
 //import icons
 import github from '../icons/github.png';
