@@ -13,7 +13,7 @@ function View_All_projects_btn() {
   return (
 
       <div className="view-all-projects-btn">
-          <a href="../pages/Project_page">View all projects</a>
+          <Link to="pages/Project_page">View all projects</Link>
       </div>
   )
 }
