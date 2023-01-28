@@ -8,6 +8,7 @@ import nightMode from '../images/nightmode.svg';
 import '../styles/style.css';
 
 class Navigation extends Component {
+
     render() {
 
         const navigationLinks = [
@@ -19,7 +20,7 @@ class Navigation extends Component {
 
         return (
             <nav>
-                <ul className="navigation">
+                <ul className="navigation" id="nav">
 
                     <div className="left">
                         <h1><span>Joshua</span>Thomas.</h1>

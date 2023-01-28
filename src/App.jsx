@@ -1,5 +1,5 @@
 //import react
-import React from 'react'
+import React, {useEffect}from 'react'
 
 //image imports
 import nightMode from './images/nightmode.svg';
@@ -18,12 +18,45 @@ import Project_page from './pages/Project_page';
 import Home from './pages/Home';
 import Read_more from './pages/Read_more';
 
+
 function App() {
+
+  
+  const removeNav = (boolean) => {
+    if(boolean == true){
+        document.getElementById('nav').style.display = 'none';
+    }
+  }
+  
+  const addNav = (boolean) => {
+    if(boolean == true){
+        document.getElementById('nav').style.display = 'flex';
+    }
+  }
+  
+  useEffect(() =>{
+    let oldPos = 0;
+    let newPos = 0;
+  
+    window.addEventListener('scroll', function(e) {
+        newPos = window.pageYOffset;
+  
+        if(oldPos - newPos < 0){
+            removeNav(true)
+        } else if(oldPos - newPos > 0){
+            addNav(true)
+        }
+  
+        oldPos = newPos;
+    })
+  })
+
+
   return (
     <>
       <Router>
         <nav>
-          <ul className="navigation">
+          <ul className="navigation" id="nav">
               <div className="left">
                 <h1><Link to="/"><span>Joshua</span></Link>Thomas.</h1>
               </div>

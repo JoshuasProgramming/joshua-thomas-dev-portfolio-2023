@@ -52,7 +52,7 @@ nav{
     .navigation{
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: row;
         background: $primary-background;
         min-height: 56px;
@@ -90,6 +90,7 @@ nav{
             justify-content: space-between;
             flex-direction: row;
             width: 325px;
+            display: none;
 
             a{
                 list-style-type: none;

@@ -36,7 +36,7 @@ nav {
 nav .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   background: #01172c;
   min-height: 56px;
@@ -69,6 +69,7 @@ nav .navigation .right {
   justify-content: space-between;
   flex-direction: row;
   width: 325px;
+  display: none;
 }
 nav .navigation .right a {
   list-style-type: none;
