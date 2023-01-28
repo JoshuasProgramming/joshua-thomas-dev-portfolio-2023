@@ -39,17 +39,17 @@ const Featured_projects = (props) => {
                         paragraph2_text: props.paragraph2_text, code_snippet2: props.code_snippet2}} 
                         style={{ textDecoration: 'none' }}  >Read more &#x27a4;</Link>
                         <a href={props.githubRepo} target="_blank" alt="github" aria-label="go to github repository">
-                            <img src={github}/>
+                            <img src={github} alt="github" aria-label="go to github repository"/>
                         </a>
                         
                         <a href={props.openLink} target="_blank" alt="openLink" aria-label="go to open link">
-                            <img src={openLink}/>
+                            <img src={openLink} alt="openLink" aria-label="go to open link"/>
                         </a>
 
                         {props.youtubeVideo == true ? 
 
-                        <a href={props.youtubeLink} target="_blank" alt="youtube" aria-label="go to github repository">
-                            <img src={youtube}/>
+                        <a href={props.youtubeLink} target="_blank" alt="youtube" aria-label="go to youtube video">
+                            <img src={youtube} alt="youtube" aria-label="go to youtube video"/>
                         </a>
 
                         :
