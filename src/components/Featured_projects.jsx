@@ -1,8 +1,6 @@
 //react imports 
 import React, { Component } from 'react';
 
-import { LazyLoadImage, trackWindowScroll } from 'react-lazy-load-image-component';
-
 //import components 
 import Featured_projects_language from './Featured_projects_language';
 import View_All_Projects from '../components/View_All_Projects';
@@ -14,7 +12,6 @@ import youtube from '../icons/youtube.png';
 
 //style imports
 import '../styles/style.css';
-import { useLoaderData } from 'react-router-dom';
 
 //import react router from 'react-router
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";

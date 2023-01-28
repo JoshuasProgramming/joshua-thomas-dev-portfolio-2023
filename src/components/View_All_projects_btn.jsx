@@ -3,9 +3,6 @@ import React from 'react'
 //style imports
 import '../styles/style.css';
 
-//import pages
-import Project_page from '../pages/Project_page';
-
 //import react router
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 

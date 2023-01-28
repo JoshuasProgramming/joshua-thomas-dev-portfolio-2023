@@ -1,9 +1,6 @@
 //react imports 
 import React, { Component } from 'react';
-import Project_Item from './Project_item';
 import Featured_projects from './Featured_projects';
-import Featured_projects_language from './Featured_projects_language';
-import View_All_Projects from './View_All_Projects';
 
 //style imports
 import '../styles/style.css';
