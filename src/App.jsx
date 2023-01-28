@@ -24,13 +24,18 @@ function App() {
   
   const removeNav = (boolean) => {
     if(boolean == true){
-        document.getElementById('nav').style.display = 'none';
+        document.getElementById('nav').style.transform = 'translateY(-100px)';
+        // document.getElementById('nav').style.display = 'none';
+        document.getElementById('nav').style.transition = '.25s ease-in-out';
+        
     }
   }
   
   const addNav = (boolean) => {
     if(boolean == true){
-        document.getElementById('nav').style.display = 'flex';
+        document.getElementById('nav').style.display = 'inline';
+        document.getElementById('nav').style.transition = '.25s ease-in-out';
+        document.getElementById('nav').style.transform = 'translateY(0px)';
     }
   }
   
@@ -55,8 +60,8 @@ function App() {
   return (
     <>
       <Router>
-        <nav>
-          <ul className="navigation" id="nav">
+        <nav id="nav">
+          <ul className="navigation">
               <div className="left">
                 <h1><Link to="/"><span>Joshua</span></Link>Thomas.</h1>
               </div>
