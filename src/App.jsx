@@ -25,7 +25,6 @@ function App() {
   const removeNav = (boolean) => {
     if(boolean == true){
         document.getElementById('nav').style.transform = 'translateY(-100px)';
-        // document.getElementById('nav').style.display = 'none';
         document.getElementById('nav').style.transition = '.25s ease-in-out';
         
     }
