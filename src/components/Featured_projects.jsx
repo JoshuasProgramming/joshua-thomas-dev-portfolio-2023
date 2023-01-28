@@ -24,7 +24,7 @@ const Featured_projects = (props) => {
         return (
             <div className="project-card">
                 <div className="left">
-                    <LazyLoadImage src={props.image} alt={props.alt} loading="lazy"/>
+                    <img src={props.image} alt={props.alt}/>
                 </div>
                 <div className="right">
                     <h1>{props.title}</h1>
