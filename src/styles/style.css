@@ -284,6 +284,9 @@ nav .navigation .right .night-light-mode-icon:hover {
     font-size: 15px;
     width: 343px;
   }
+  .hero-section p .purple-text {
+    font-size: 35px;
+  }
 }
 .project-page {
   padding-bottom: 30px;
