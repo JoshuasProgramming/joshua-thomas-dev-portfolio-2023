@@ -14,21 +14,6 @@ function Home() {
     document.title = 'Joshua Thomas | Home';
   }, []);
 
-  
-
-  // const prevScrollpos = window.pageYOffset;
-  // window.onscroll = function() {
-  // const currentScrollPos = window.pageYOffset;
-  //   if (prevScrollpos > currentScrollPos) {
-  //     document.getElementById("navigation").style.top = "0";
-  //   } else {
-  //     document.getElementById("navigation").style.top = "-50px";
-  //   }
-  //   prevScrollpos = currentScrollPos;
-  // }
-
-
-
   return (  
     <> 
       <Hero />
