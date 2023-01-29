@@ -114,7 +114,6 @@ export default function Read_More() {
     //page will start at top
     window.scrollTo(0, 0);
 
-    // let downloadLink = "https://github.com/JoshuasProgramming/" + location.state.title.replace(/\s+/g,"-") + "/archive/refs/heads/main.zip";
     let downloadLink = location.state.githubRepo + "/archive/refs/heads/main.zip";
 
   return (

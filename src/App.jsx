@@ -1,5 +1,5 @@
 //import react
-import React, {useEffect}from 'react'
+import React, {useEffect} from 'react'
 
 //image imports
 import nightMode from './images/nightmode.svg';
