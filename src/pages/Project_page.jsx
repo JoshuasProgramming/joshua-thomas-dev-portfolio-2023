@@ -11,10 +11,9 @@ function Projects_page() {
 
   return (
     <>
-    {/* <Projects/> */}
     <section className="hero-section project-page">
       <p className='text'>All projects show my progression as</p>
-      <div className='purple-text'>a Full Stack Engineer</div>
+      <div className='purple-text'>a Front End Developer</div>
     </section>
         
     <View_All_Projects/>

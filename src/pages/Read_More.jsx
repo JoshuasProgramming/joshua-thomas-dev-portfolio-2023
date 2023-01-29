@@ -63,14 +63,6 @@ import apple_clone_snippet_2 from '../read_more_code_snippets/apple_clone_snippe
 
 export default function Read_More() {
   const location = useLocation();
-  // console.log(location);
-
-  // fetch("https://api.github.com/repos/JoshuasProgramming/")
-  // .then(response => response.json())
-  // .then(data => {
-  //   console.log(data);
-  // })
-  // .catch(error => console.log(error));
 
   const projects = [
     {rank: 1,title: 'Apple Clone (React.js)', desc:'I created the fully responsive apple website (November 2022) from scratch . This website uses React.js, SASS & Responsive Design', image: {src: Apple, alt: 'AppleCloneImg'}, feature:false, featureAll:true, date:'In production', language1:'React', language2:'React Props', language3:'SCSS', Language4:'Responsive Design', language5:'HTML', openLink: 'https://apple-clone-reactjs.netlify.app/', githubRepo:'https://github.com/JoshuasProgramming/apple-clone', code_snippet1:apple_clone_snippet_1, code_snippet2:apple_clone_snippet_2 ,heading1_text:"1. Header Component", paragraph1_text:"The Header component is a React component that renders the website's navigation bar, using the 'map' method to loop through a 'navList' array of different navigation items such as text and svg images. The component conditionally renders each item, displaying text as <li> element and images as <img> element. It also imports css and svg images for the Apple logo, search and bag icon.", heading2_text: "2. ProductBanner Component", paragraph2_text:"The ProductBanner component is a class-based React component that renders product categories by looping through an array of products objects using the 'map' method. It passes properties such as title, image and an isNew boolean value as props to the ProductBanner_Item component, which then uses these props to render the product title, image, and a 'New' label if isNew is true. It imports images for various Apple products, including Macbook Air, Macbook Pro, iPhone 14 Pro, iPhone 14, iPhone SE, Apple Watch Ultra, iMac 24, Apple TV 4K, compare, AirTag and accessories."},
@@ -95,14 +87,6 @@ export default function Read_More() {
     {rank: 20,title: 'Personal portfolio 2023', desc:'Front End website for 2023', image:{src: portfolio2023, alt: 'Portfolio2023IMG'}, feature:false, featureAll:true, feature:false, featureAll:true, githubRepo:'https://github.com/JoshuasProgramming/joshua-thomas-dev-portfolio-2023', language1: 'React', language2:'React Props', language3:'React Router', language4:'SCSS', language5: 'Responsive Design'},
     {rank: 20,title: 'null', desc:'Front End website for 2023', image:{src: portfolio2023, alt: 'Portfolio2023IMG'}, feature:false, featureAll:true, feature:false, featureAll:true, githubRepo:'https://github.com/JoshuasProgramming/joshua-thomas-dev-portfolio-2023', language1: 'React', language2:'React Props', language3:'React Router', language4:'SCSS', language5: 'Responsive Design'},
     ]
-
-    // let profileName = "JoshuasProgramming"
-
-    // fetch(`https://api.github.com/users/${profileName}`)
-    //   .then(response => response.json())
-    //   .then(response => {
-    //       console.log (response);
-    // })
 
     /**
      * Code below will allow us to go to the next page and previous page 
