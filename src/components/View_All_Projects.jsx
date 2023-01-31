@@ -91,47 +91,47 @@ class View_All_Projects extends Component {
         return (
             projects.map((value, key) => (
                 <>
-                        <div className="project-card" key={key}>
-                        <div className="left">
-                            <img src={value.image.src} alt={value.image.alt} />
-                        </div>
-                        <div className="right">
-                            <h1>{value.title}</h1>
-                            <h4>{value.date}</h4>
-                            <Featured_projects_language language1={value.language1} language2={value.language2} language3={value.language3} language4={value.language4} language5={value.language5} />
-                            <p>{value.desc}</p>
-                            <div className="info">
+                    <div className="project-card" key={key}>
+                    <div className="left">
+                        <img src={value.image.src} alt={value.image.alt} />
+                    </div>
+                    <div className="right">
+                        <h1>{value.title}</h1>
+                        <h4>{value.date}</h4>
+                        <Featured_projects_language language1={value.language1} language2={value.language2} language3={value.language3} language4={value.language4} language5={value.language5} />
+                        <p>{value.desc}</p>
+                        <div className="info">
 
-                                <Link to="../pages/Read_more" state={
-                                    {rank: value.rank, title: value.title, date:value.date, image: value.image.src, alt: value.image.alt, code_snippet1: value.code_snippet1, 
-                                    paragraph1: value.paragraph1, paragraph2: value.paragraph2, heading1_text: value.heading1_text, paragraph1_text: value.paragraph1_text, 
-                                    code_snippet2: value.code_snippet2, heading2_text: value.heading2_text, paragraph2_text: value.paragraph2_text, 
-                                    githubRepo: value.githubRepo, openLink: value.openLink, language1: value.language1, language2: value.language2, 
-                                    language3: value.language3, language4: value.language4, language5:value.language5,next: projects[key + 1], prev: projects[key - 1]}} 
-                                    style={{ textDecoration: 'none' }}  >Read more &#x27a4;</Link>
+                            <Link to="../pages/Read_more" state={
+                                {rank: value.rank, title: value.title, date:value.date, image: value.image.src, alt: value.image.alt, code_snippet1: value.code_snippet1, 
+                                paragraph1: value.paragraph1, paragraph2: value.paragraph2, heading1_text: value.heading1_text, paragraph1_text: value.paragraph1_text, 
+                                code_snippet2: value.code_snippet2, heading2_text: value.heading2_text, paragraph2_text: value.paragraph2_text, 
+                                githubRepo: value.githubRepo, openLink: value.openLink, language1: value.language1, language2: value.language2, 
+                                language3: value.language3, language4: value.language4, language5:value.language5,next: projects[key + 1], prev: projects[key - 1]}} 
+                                style={{ textDecoration: 'none' }}  >Read more &#x27a4;</Link>
 
-                                <a href={value.githubRepo} target="_blank">
-                                    <img src={github} />
+                            <a href={value.githubRepo} target="_blank">
+                                <img src={github} />
+                            </a>
+
+                            <a href={value.openLink} target="_blank">
+                                <img src={openLink} />
+                            </a>
+
+                            {value.youtubeVideo == true ?
+
+                                <a href={value.youtubeLink} target="_blank">
+                                    <img src={youtube} />
                                 </a>
 
-                                <a href={value.openLink} target="_blank">
-                                    <img src={openLink} />
-                                </a>
+                                :
 
-                                {value.youtubeVideo == true ?
-
-                                    <a href={value.youtubeLink} target="_blank">
-                                        <img src={youtube} />
-                                    </a>
-
-                                    :
-
-                                    false}
-
-                                </div>
+                                false}
 
                             </div>
+
                         </div>
+                    </div>
                 </>
             ))
         )
