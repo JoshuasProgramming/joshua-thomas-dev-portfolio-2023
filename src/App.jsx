@@ -21,7 +21,25 @@ import Read_more from './pages/Read_more';
 
 function App() {
 
-  
+  /**
+ * This code defines three functions: `removeNav`, `addNav`, and a `useEffect` hook.
+ * 
+ * The `removeNav` function takes a boolean argument, and if the argument is `true`, 
+ * it sets the CSS `transform` property of the HTML element with the id "nav" 
+ * to `translateY(-100px)`, and the `transition` property to `.25s ease-in-out`.
+ * 
+ * The `addNav` function takes a boolean argument, and if the argument is `true`, 
+ * it sets the CSS `display` property of the HTML element with the id "nav" to `inline`,
+ * the `transition` property to `.25s ease-in-out`, and the `transform` property 
+ * to `translateY(0px)`.
+ * 
+ * The `useEffect` hook listens for the 'scroll' event on the window, and keeps track
+ * of the current and previous `pageYOffset` values. If the user scrolls down, 
+ * the `removeNav` function is triggered with a `true` argument. If the user scrolls up, 
+ * the `addNav` function is triggered with a `true` argument. This allows the "nav" element
+ * to be hidden when the user scrolls down and shown when the user scrolls up.
+ */
+
   const removeNav = (boolean) => {
     if(boolean == true){
         document.getElementById('nav').style.transform = 'translateY(-100px)';
