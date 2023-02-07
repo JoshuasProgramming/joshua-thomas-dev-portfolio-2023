@@ -25,6 +25,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
  * If an attribute from object, 'projects' in projects.jsx has 'feature: true' then we'll proceed, and insert data into the project card (e.g: title, date, image, ...).
  * 
  */
+
+
 const Featured_projects = (props) => {   
     if(props.feature == true){
         return (
