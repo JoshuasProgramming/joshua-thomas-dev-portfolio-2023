@@ -59,6 +59,7 @@ import burgerPalace_snippet_2 from '../read_more_code_snippets/burgerPalace_snip
 import apple_clone_snippet_1 from '../read_more_code_snippets/apple_clone_snippet_1.png';
 import apple_clone_snippet_2 from '../read_more_code_snippets/apple_clone_snippet_2.png';
 import portfolio2023_snippet from '../read_more_code_snippets/portfolio2023_snippet.png';
+import portfolio2023_snippet_2 from '../read_more_code_snippets/portfolio2023_snippet_2.png';
 
 //import react router from 'react-router
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";

@@ -12,8 +12,7 @@ import download from '../icons/download.png';
 //import react router from 'react-router
 import { useNavigate, BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
-
-//image imports
+// //image imports
 import Apple from '../images/apple Clone.png';
 import Tappedesigns from '../images/tappedesigns.png';
 import MoneyBox from '../images/moneybox.png';
@@ -35,7 +34,7 @@ import NumberGuessingGame from '../images/number guessing game.JPG';
 import portfolio2022 from '../images/portfolio.JPG';
 import portfolio2023 from '../images/portfolio2023.png';
 
-//snippet imports
+// //snippet imports
 import kocoon_snippet_1 from '../read_more_code_snippets/kocoon_snippet_1.png';
 import kocoon_snippet_2 from '../read_more_code_snippets/kocoon_snippet_2.png';
 import numberGuessing_snippet_1 from '../read_more_code_snippets/numberGuessing_snippet_1.png';

@@ -10,6 +10,7 @@ import Sass from '../icons/sass.png';
 import Css from '../icons/css.png';
 import Html from '../icons/html.png';
 import bigcommerce from '../icons/bigcommerce.png';
+import typescript from '../icons/typescript.png';
 
 //style imports
 import '../styles/style.css';
@@ -20,6 +21,7 @@ class Languages extends Component {
         const icons = [
             {images: {src: ReactIcon, alt: 'react-image'}, name: 'react'},
             {images: {src: JS, alt: 'js-image'}, name: 'javascript (ES6 / ES7)'},
+            {images: {src: typescript, alt: 'Typescript-image'}, name:'typescript'},
             {images: {src: json, alt: 'json-image'}, name: 'json'},
             {images: {src: php, alt: 'php-image'}, name: 'php'},
             {images: {src: Sass, alt: 'sass-image'}, name: 'SASS / SCSS'},
