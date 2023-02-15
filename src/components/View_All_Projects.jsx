@@ -128,6 +128,14 @@ class View_All_Projects extends Component {
                             
                                 :
 
+                                value.openLink == 'current' ? 
+
+                                <a target="_blank">
+                                <img src={joshua} />
+                                </a>
+
+                                :
+
                                 <a href={value.openLink} target="_blank">
                                     <img src={openLink} />
                                 </a>
