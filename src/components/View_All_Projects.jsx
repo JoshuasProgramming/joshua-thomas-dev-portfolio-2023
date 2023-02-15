@@ -8,6 +8,7 @@ import Featured_projects_language from './Featured_projects_language';
 import github from '../icons/github.png';
 import openLink from '../icons/openLink.png';
 import youtube from '../icons/youtube.png';
+import na from '../icons/na.png';
 
 //style imports
 import '../styles/style.css';
@@ -119,7 +120,14 @@ class View_All_Projects extends Component {
                                 <img src={github} />
                             </a>
                             
-                            {value.openLink == undefined ? false :
+                            {value.openLink == undefined ? 
+
+                                <a>
+                                <img src={openLink} />
+                                </a>
+                            
+                                :
+
                                 <a href={value.openLink} target="_blank">
                                     <img src={openLink} />
                                 </a>
