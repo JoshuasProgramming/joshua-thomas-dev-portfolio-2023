@@ -8,6 +8,7 @@ import { useLocation } from 'react-router-dom'
 import github from '../icons/github.png';
 import openLink from '../icons/openLink.png';
 import download from '../icons/download.png';
+import na from '../icons/na.png';
 
 //import react router from 'react-router
 import { useNavigate, BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
