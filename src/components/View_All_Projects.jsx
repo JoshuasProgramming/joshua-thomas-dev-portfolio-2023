@@ -118,10 +118,12 @@ class View_All_Projects extends Component {
                             <a href={value.githubRepo} target="_blank">
                                 <img src={github} />
                             </a>
-
-                            <a href={value.openLink} target="_blank">
-                                <img src={openLink} />
-                            </a>
+                            
+                            {value.openLink == undefined ? false :
+                                <a href={value.openLink} target="_blank">
+                                    <img src={openLink} />
+                                </a>
+                            }
 
                             {value.youtubeVideo == true ?
 

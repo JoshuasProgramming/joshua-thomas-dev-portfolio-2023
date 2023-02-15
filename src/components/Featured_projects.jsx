@@ -50,9 +50,11 @@ const Featured_projects = (props) => {
                             <img src={github} alt="github" aria-label="go to github repository"/>
                         </a>
                         
-                        <a href={props.openLink} target="_blank" alt="openLink" aria-label="go to open link">
-                            <img src={openLink} alt="openLink" aria-label="go to open link"/>
-                        </a>
+                        {props.openLink == false ? false : 
+                            <a href={props.openLink} target="_blank" alt="openLink" aria-label="go to open link">
+                                <img src={openLink} alt="openLink" aria-label="go to open link"/>
+                            </a>
+                        }
 
                         {props.youtubeVideo == true ? 
 
