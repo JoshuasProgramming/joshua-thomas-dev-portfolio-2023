@@ -123,7 +123,7 @@ class View_All_Projects extends Component {
                             {value.openLink == undefined ? 
 
                                 <a>
-                                <img src={openLink} />
+                                <img src={na} />
                                 </a>
                             
                                 :
