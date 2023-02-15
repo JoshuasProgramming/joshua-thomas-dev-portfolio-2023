@@ -9,6 +9,7 @@ import github from '../icons/github.png';
 import openLink from '../icons/openLink.png';
 import youtube from '../icons/youtube.png';
 import na from '../icons/na.png';
+import joshua from '../icons/joshua.png';
 
 //style imports
 import '../styles/style.css';
