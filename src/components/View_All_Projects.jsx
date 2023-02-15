@@ -131,7 +131,7 @@ class View_All_Projects extends Component {
                                 value.openLink == 'current' ? 
 
                                 <a target="_blank">
-                                <img src={joshua} />
+                                <img src={joshua} title="currently on website" />
                                 </a>
 
                                 :
