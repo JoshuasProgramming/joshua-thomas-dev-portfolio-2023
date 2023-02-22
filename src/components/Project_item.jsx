@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+//import styles
 import '../styles/style.css';
 
 const Project_Item = (props) => {
